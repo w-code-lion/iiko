@@ -1,0 +1,735 @@
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('fonts/ProDisplay-light/SFProDisplay-Light.woff2') format('woff2'),
+         url('fonts/ProDisplay-light/SFProDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('fonts/ProDisplay-regular/SFProDisplay-Regular.woff2') format('woff2'),
+         url('fonts/ProDisplay-regular/SFProDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('fonts/ProDisplay-medium/SFProDisplay-Medium.woff2') format('woff2'),
+         url('fonts/ProDisplay-medium/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('fonts/ProDisplay-semibold/SFProDisplay-Semibold.woff2') format('woff2'),
+         url('fonts/ProDisplay-semibold/SFProDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #1F1F1F;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'SFProDisplay';
+
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #FFF;
+	text-decoration: underline;
+}
+a:hover {
+	color: #FFF;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #FFF;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+.header {
+	overflow: hidden;
+	background-image: url(../images/banner-header.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 141px;
+}
+
+.container {
+	max-width: 1140px;
+	/*outline: 1px solid red;*/
+	overflow: hidden;
+	margin:0 auto;
+	padding: 0 20px;
+}
+
+
+.header__panel {
+	background-color: #102143;
+	opacity: 1;
+}
+
+.header__top {
+	overflow: hidden;
+	max-width: 1140px;
+	margin:0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.headhesive {
+	background-color: #102143;
+	position: fixed;
+	width: 100%;
+	padding: 50px 0 5px 0;
+	transition: 0.5s;
+	opacity: 1;
+	z-index: 9;
+}
+
+.headhesive--stick {
+	padding: 15px 0;
+}
+
+.header__top-logo {
+    flex-shrink: 0;
+}
+
+.header__top-block {
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__list-item {
+	text-transform: uppercase;
+	margin-right: 34px;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+.menu__list-item:last-child {
+	margin-right: 0;
+}
+
+.menu__link {
+	text-decoration: none;
+}
+
+.menu__link:hover {
+	text-decoration: none;
+}
+
+.block__language-call {
+	display: flex;
+	align-items: center;
+	margin-left: 65px;
+}
+
+.language__item {
+	margin-right: 20px;
+	font-weight: 500;
+}
+
+.line {
+	position: relative;
+}
+
+.line::after {
+	content: '';
+	position: absolute;
+    background-color: #fff;
+    width:2px;
+    height: 16px;
+    top: 2px;
+    right: -11px;
+}
+
+.language__item-link {
+	text-decoration: none;
+}
+
+.language__item-link:hover {
+	text-decoration: none;
+}
+
+.button__call-link {
+	margin-left: 30px;
+	letter-spacing: 0.05em;
+	font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    height: 55px;
+    width: 190px;
+    text-align: center;
+    padding-top: 17px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button__call-link:hover {
+    text-decoration: none;
+}
+
+.popup {
+	background-color: #fff;
+	max-width: 400px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.popup__text {
+	padding-top: 90px;
+}
+
+.header__center {
+   margin-top: 50px;
+}
+
+.header__carousel {
+
+}
+
+.hgroup {
+	padding-top: 68px;
+	padding-bottom: 75px;
+	max-width: 575px;
+}
+
+.slider__top-paragraph {
+	font-weight: 600;
+	font-size: 3.125em;
+	color: #fff;
+	line-height: 1.3;
+	margin-bottom: 30px;
+}
+
+.slider__top-text {
+	font-size: 1.375em;
+	line-height: 1.5;
+	color: #fff;
+}
+
+.header__bottom {
+	height: 140px;
+	width: 60%;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.header__bottom-brends {
+}
+
+.block__brends {
+	margin-top: 58px;
+	padding-left: 55px;
+}
+
+.codepen {
+	padding-top: 9px;
+}
+
+.main {
+	overflow: hidden;
+}
+
+.about {
+	overflow: hidden;
+	padding: 80px 20px 160px 20px;
+	margin: 70px -20px 0 -20px;
+}
+
+.about__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.about__top-foto{
+   width: 52.63%;
+   flex-shrink: 0;
+}
+
+.about__foto {
+   width: 100%;
+}
+
+.about__top-text {
+	margin-top: 80px;
+	width: 41.5%;
+	overflow: hidden;
+}
+
+.main__paragraph {
+	font-size: 3.125em;
+	margin-left: -2px;
+	margin-bottom: 30px;
+}
+.br{
+	padding-right: 27px;
+}
+
+.main__text {
+	font-weight: 300;
+	font-size: 1.25em;
+	margin-bottom: 14px;
+}
+
+.more {
+	margin-top: 30px;
+}
+
+a.main__more {
+	position: relative;
+	color: #0C2758;
+	font-size: 1.25em;
+	padding-right: 34px;
+	background-image: url(../images/more-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: right 11px;
+	text-decoration: none;
+}
+a.main__more::before {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	height: 1px;
+	width: 100px;
+	background-color: #0C2758;
+}
+
+.about__bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__bottom-numbers {
+	overflow: hidden;
+	width: 22.98%;
+	background-color: #fff;
+	text-align: center;
+	padding: 62px 0 57px 0;
+	box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.06);
+}
+
+.numbers__item {
+	font-size: 3.125em;
+}
+
+.numbers__text {
+	color: #8B8B8B;
+	font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1090px) {
+	.menu__list-item {
+		margin-right: 22px;
+	}
+
+	.block__language-call {
+		margin-left: 45px;
+	}
+
+	.button__call-link {
+		margin-left: 10px;
+	}
+}
+
+
+
