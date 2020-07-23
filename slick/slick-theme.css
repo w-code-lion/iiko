@@ -36,7 +36,7 @@
     z-index: 3;
     opacity: 1;
     
-    background-color: #364274;;
+    background-color: #364274;
 
     background-image: url(../images/arrow-prev.svg);
     background-repeat: no-repeat;
@@ -46,7 +46,6 @@
      -o-transition: 0.3s;
      transition: 0.3s;
 }
-
 
 .slick-next {
     height: 68px;
@@ -65,7 +64,7 @@
     z-index: 3;
     opacity: 1;
 
-    background-color: #364274;;
+    background-color: #364274;
 
     background-image: url(../images/arrow-next.svg);
     background-repeat: no-repeat;
@@ -164,4 +163,69 @@
 {
     opacity: 1;
     color: #fff;
+}
+
+
+/*Arrow about company*/
+
+.prev
+{
+    height: 68px;
+    width: 70px;
+    font-size: 0;
+
+    position: absolute;
+    bottom:  25px;
+    right: 102px;
+    display: block;
+    cursor: pointer;
+
+    color: transparent;
+    border:none;
+    outline: none;
+    background: none;
+    z-index: 3;
+    opacity: 1;
+    
+    background-color: #0C2758;
+
+    background-image: url(../images/arrow-prev.svg);
+    background-repeat: no-repeat;
+    background-position: 25px 50%;
+    -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+     -o-transition: 0.3s;
+     transition: 0.3s;
+}
+
+
+
+
+
+.next {
+    height: 68px;
+    width: 70px;
+    font-size: 0;
+    position: absolute;
+    bottom: 25px;
+    right: 27px;
+    display: block;
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: none;
+    z-index: 3;
+    opacity: 1;
+
+    background-color: #0C2758;
+
+    background-image: url(../images/arrow-next.svg);
+    background-repeat: no-repeat;
+    background-position: 25px 50%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }

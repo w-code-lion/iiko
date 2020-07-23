@@ -10,12 +10,10 @@ $(document).ready(function(){
     dots: true,
     vertical: true
   });
-});
 
-//////////////////////////////////////////
+///////////////////////////////////////
 
-$(document).ready(function(){
-  $('.header__bottom-brends').slick({
+ $('.header__bottom-brends').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 600,
@@ -25,9 +23,25 @@ $(document).ready(function(){
   slidesToShow: 1,
   variableWidth: true
   });
+
+ ////////////////////////////////////
+
+ $('.company__carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 600,
+    arrows: true,
+    dots: false,
+    infinite: true,
+  slidesToShow: 1,
+  prevArrow: '<div class="prev"></div>',
+  nextArrow: '<div class="next"></div>',
+  });
+
 });
 
 /////////////////////////////////////////
+
 $(document).ready(function(){
   $('.popup-link').magnificPopup({});
 
