@@ -142,7 +142,7 @@ img{
 
 .container {
 	max-width: 1140px;
-	/*outline: 1px solid red;*/
+	outline: 1px solid red;
 	overflow: hidden;
 	margin:0 auto;
 	padding: 0 20px;
@@ -431,7 +431,7 @@ a.main__more::before {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding:75px 0 55px 0;
+	padding:72px 0 55px 0;
 }
 
 .our__services-block {
@@ -542,11 +542,6 @@ a.services__section-more::before {
 	margin-bottom: 40px;
 }
 
-
-
-
-
-
 .about__company-slide {
 	overflow: hidden;
 	width: 52.63%;
@@ -558,38 +553,129 @@ a.services__section-more::before {
 }
 
 
+.advantage {
+    overflow: hidden;
+	background-image: url(../images/dvantage-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding:72px 0 100px 0;
+}
 
+.advantage__block {
+	overflow: hidden;
+}
 
+.advantage__text {
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 62px;
+	margin-bottom: -37px;
+	position: relative;
+}
 
+.advantage__text-section {
+	overflow: hidden;
+	width: 26.75%;
+	margin-bottom: 35px;
+}
 
+.advantage__paragraph {
+	font-size: 1.25em;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
 
+.product__description {
+	color: #fff;
+	line-height: 1.5;
+}
 
+.advantage__text-section::before {
+	content: '';
+	width: 1px;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 31.5%;
+}
 
+.advantage__text-section::after {
+	content: '';
+	width: 1px;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	right: 32%;
 
+}
 
+.prices {
+	overflow: hidden;
+	padding: 105px 0 160px 0;
+}
 
+.prices__block-paragraph {
+	font-size: 3.125em;
+	text-align: center;
+}
 
+.prices__block-iiko {
+	font-size: 1.25em;
+	text-align: center;
+	margin:28px 0 0 0;
+	line-height: 1.5;
+	margin-bottom: 32px;
+}
 
+.prices__block-products {
+	overflow: hidden;
+}
 
+.tabs{
+	display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
 
+.tab-1 {
+	border: 1px solid #0C2758;
+	padding: 14px 33px 15px 33px;
+	border-right: none;
+	cursor: pointer;
+}
 
+.tab-2 {
+	border: 1px solid #0C2758;
+	padding: 14px 33px 15px 33px;
+	cursor: pointer;
+}
 
+.active-tab {
+	background-color: #0C2758;
+	color: #fff;
+}
 
+.tab__content {
+	overflow: hidden;
+}
 
+.tab-item-1 {
+	background-color: pink;
+	text-align: center;
+	padding: 30px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tab-item-2 {
+	background-color: yellow;
+	text-align: center;
+	padding: 30px 0;
+}
 
 
 

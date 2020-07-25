@@ -86,3 +86,15 @@ $(document).ready(function(){
       
 
 });
+///////////////////////////////////////////
+
+
+$(document).ready(function(){
+      $(".tab_item").not(":first").hide();
+$(".prices__block-products .tab").click(function() {
+  $(".prices__block-products .tab").removeClass("active-tab").eq($(this).index()).addClass("active-tab");
+  $(".tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active-tab");
+
+});
+
