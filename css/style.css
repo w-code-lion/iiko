@@ -142,7 +142,7 @@ img{
 
 .container {
 	max-width: 1140px;
-	outline: 1px solid red;
+	/*outline: 1px solid red;*/
 	overflow: hidden;
 	margin:0 auto;
 	padding: 0 20px;
