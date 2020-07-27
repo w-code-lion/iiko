@@ -38,6 +38,7 @@ $(document).ready(function(){
   nextArrow: '<div class="next"></div>',
   });
 
+
 });
 
 /////////////////////////////////////////
@@ -86,8 +87,8 @@ $(document).ready(function(){
       
 
 });
-///////////////////////////////////////////
 
+///////////////////////////////////////////
 
 $(document).ready(function(){
       $(".tab_item").not(":first").hide();
@@ -98,3 +99,15 @@ $(".prices__block-products .tab").click(function() {
 
 });
 
+////////////////////////////////////////////
+
+$(document).ready(function(){
+
+    
+        $('.beefup').beefup({
+          openSingle: true,
+        });
+
+    
+
+});

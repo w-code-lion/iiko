@@ -16,6 +16,9 @@
     <!-- Стили Po-Pup -->
     <link rel="stylesheet" href="css/magnific-popup.css">
 
+    <!-- Стили Beefup Accordion -->
+    <link rel="stylesheet" href="css/jquery.beefup.css">
+
     <!-- [if lt IE 9]> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
@@ -40,10 +43,10 @@
                             <a class="menu__link" href="#prices">Цены</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#">Вопросы</a>
+                            <a class="menu__link" href="#questions">Вопросы</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#">Статьи</a>
+                            <a class="menu__link" href="#articles">Статьи</a>
                         </li>
                     </ul>
                 </nav>
@@ -308,17 +311,257 @@
 				    </div>
 				    <div class="tab_content">
 				        <div class="tab_item tab-item-1">
-				            Содержимое 1
+				            <div class="prices__carousel">
+				            	<div class="prices__carousel-slide">
+				            		<p class="name__prices">Стандарт</p>
+				            		<p class="unit__price">от 1029₴</p>
+				            		<ul class="prices__spisok">
+				            			<li class="prices__spisok-item">Тариф iikolite</li>
+				            			<li class="prices__spisok-item">Облачное решение </li>
+				            			<li class="prices__spisok-item">Только 1 касса</li>
+				            		</ul>
+				            		<a href="#" class="button__application">Оставить заявку</a>
+				            	</div>
+				            	<div class="prices__carousel-slide">
+				            		<p class="name__prices">Голд</p>
+				            		<p class="unit__price">от 2062₴</p>
+				            		<ul class="prices__spisok">
+				            			<li class="prices__spisok-item">Тариф iikolite</li>
+				            			<li class="prices__spisok-item">Облачное решение </li>
+				            			<li class="prices__spisok-item">Только 1 касса</li>
+				            			<li class="prices__spisok-item">Базовая фукциональность</li>
+				            		</ul>
+				            		<a href="#" class="button__application button-center">Оставить заявку</a>
+				            	</div>
+				            	<div class="prices__carousel-slide">
+				            		<p class="name__prices">Премиум</p>
+				            		<p class="unit__price">от 22129₴</p>
+				            		<ul class="prices__spisok">
+				            			<li class="prices__spisok-item">Тариф iikolite</li>
+				            			<li class="prices__spisok-item">Облачное решение </li>
+				            			<li class="prices__spisok-item">Только 1 касса</li>
+				            			<li class="prices__spisok-item">Базовая фукциональность</li>
+				            		</ul>
+				            		<a href="#" class="button__application button-last">Оставить заявку</a>
+				            	</div>
+				            </div>
 				        </div>
 				        <div class="tab_item tab-item-2">
-				            Содержимое 2
+				            <div class="prices__carousel">
+				            	<div class="prices__carousel-slide">
+				            		<p class="name__prices">Стандарт</p>
+				            		<p class="unit__price">от 1029₴</p>
+				            		<ul class="prices__spisok">
+				            			<li class="prices__spisok-item">Тариф iikolite</li>
+				            			<li class="prices__spisok-item">Облачное решение </li>
+				            			<li class="prices__spisok-item">Только 1 касса</li>
+				            		</ul>
+				            		<a href="#" class="button__application">Оставить заявку</a>
+				            	</div>
+				            	<div class="prices__carousel-slide">
+				            		<p class="name__prices">Голд</p>
+				            		<p class="unit__price">от 2062₴</p>
+				            		<ul class="prices__spisok">
+				            			<li class="prices__spisok-item">Тариф iikolite</li>
+				            			<li class="prices__spisok-item">Облачное решение </li>
+				            			<li class="prices__spisok-item">Только 1 касса</li>
+				            			<li class="prices__spisok-item">Базовая фукциональность</li>
+				            		</ul>
+				            		<a href="#" class="button__application button-center">Оставить заявку</a>
+				            	</div>
+				            	<div class="prices__carousel-slide">
+				            		<p class="name__prices">Премиум</p>
+				            		<p class="unit__price">от 22129₴</p>
+				            		<ul class="prices__spisok">
+				            			<li class="prices__spisok-item">Тариф iikolite</li>
+				            			<li class="prices__spisok-item">Облачное решение </li>
+				            			<li class="prices__spisok-item">Только 1 касса</li>
+				            			<li class="prices__spisok-item">Базовая фукциональность</li>
+				            		</ul>
+				            		<a href="#" class="button__application button-last">Оставить заявку</a>
+				            	</div>
+				            </div>
 				        </div>
 				    </div>
 			    </div>
 			</div>
 		</div>
 	</div>
+	<div class="questions" id="questions">
+		<div class="container">
+			<div class="questions__block">
+				<h2 class="main__paragraph-white">Преимущества iiko</h2>
+				<p class="main__text-white">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении.</p>
+				<div class="questions__accordion">
+					<div class="questions__accordion-left">
+						<article class="beefup">
+						    <p class="beefup__head">Сложно ли перейти с другой учетной системы на iiko?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+						<article class="beefup">
+						    <p class="beefup__head">Есть ли мобильный официант?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+						<article class="beefup">
+						    <p class="beefup__head">Можно ли выгрузить данные из iiko?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+						<article class="beefup">
+						    <p class="beefup__head">С какими фискальными регистраторами работает iiko?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+						<article class="beefup">
+						    <p class="beefup__head">Сколько времени нужно для запуска?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+					</div>
+					<div class="questions__accordion-right">
+						<article class="beefup">
+						    <p class="beefup__head">Есть ли CRM система и СМС-рассылка?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+						<article class="beefup">
+						    <p class="beefup__head">Подходит ли iiko для доставки?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+						<article class="beefup">
+						    <p class="beefup__head">Как часто появляются обновления программы iiko?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+						<article class="beefup">
+						    <p class="beefup__head">Работает ли iiko без интернета?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+						<article class="beefup">
+						    <p class="beefup__head">Есть ли возможность настроить права доступа сотрудников?</p>
+						    <div class="beefup__body">
+						        <p class="open__text">Содержимое</p>
+						    </div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="articles" id="articles">
+		<div class="container">
+			<div class="articles__block">
+				<h2 class="articles__block-paragraph">Наши статьи</h2>
+				<p class="articles__block-iiko">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении. </p>
+			    <div class="articles__block-products">
+				   <section class="articles__section">
+                        <div class="picture">
+				   	        <img src="images/article-1.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Тотальная автоматизация</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="#article__popup" class="section__more popup-link">Подробнее</a>
+				   </section>
+				   <div class="mfp-hide popup" id="article__popup">
+	        	        <p class="popup__text">Наши статьи</p>
+	                </div>
+
+				    <section class="articles__section">
+				   	    <div class="picture">
+				   	        <img src="images/article-2.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Удобство интерфейса</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="#article__popup" class="section__more popup-link">Подробнее</a>
+				   </section>
+				   <div class="mfp-hide popup" id="article__popup">
+	        	        <p class="popup__text">Наши статьи</p>
+	                </div>
+
+				    <section class="articles__section">
+				   	    <div class="picture">
+				   	        <img src="images/article-3.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Управление персоналом</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="#article__popup" class="section__more popup-link">Подробнее</a>
+				   </section>
+				   <div class="mfp-hide popup" id="article__popup">
+	        	        <p class="popup__text">Наши статьи</p>
+	                </div>
+			    </div>
+			    <a href="#" class="article__button">Все статьи</a>
+			</div>
+		</div>
+	</div>
 </div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__block">
+			<div class="footer__block-left">
+				<h3 class="footer__paragraph">Контакты:</h3>
+				<ul class="footer__contact">
+					<li class="footer__contact-item">Харьков, ул. Гвардейцев-Широнинцев, 33,</li>
+					<li class="footer__contact-item"><a class="footer__tel tel__one" href="tel:+38 (099) 337-13-91">+38 (099) 337-13-91</a>Евгений</li>
+					<li class="footer__contact-item"><a class="footer__tel" href="tel:+38 (099) 635-83-42" > +38 (099) 635-83-42</a>Наталья</li>
+					<li class="footer__contact-item"><a href="#" class="email__link">retail.soft.consulting@gmail.com</a></li>
+				</ul>
+				<div class="block__confidentiality">
+					<a href="#" class="confidentiality__link">Конфиденциальность</a>
+					<a href="#" class="confidentiality__link">Наши статьи</a>
+				</div>
+			</div>
+			<div class="footer__block-right">
+				<h3 class="footer__paragraph">Наши партнеры:</h3>
+				<div class="block__partners">
+                    <div class="block__partners-left">
+						<div class="block__partners-foto code">
+							<img class="partners__logo" src="images/footer__codepen.png">
+						</div>
+						<div class="block__partners-foto code">
+							<img class="partners__logo" src="images/footer__codepen.png">
+						</div>
+						<div class="block__partners-foto code">
+							<img class="partners__logo" src="images/footer__codepen.png">
+						</div>
+                    </div>
+                    <div class="block__partners-right">
+						<div class="block__partners-foto drib">
+							<img class="partners__logo" src="images/footer__dribble.png">
+						</div>
+						<div class="block__partners-foto drib">
+							<img class="partners__logo" src="images/footer__dribble.png">
+						</div>
+						<div class="block__partners-foto drib">
+							<img class="partners__logo" src="images/footer__dribble.png">
+						</div>
+                    </div>
+				</div>
+				<div class="footer__block-seti">
+					<a class="footer__facebook-link" href="#"><img src="images/footer__facebook.svg" alt="" class="footer__facebook"></a>
+					<a class="top" href="#top"><img src="images/arrow-top.svg" alt="" class="arrow__top"></a>
+				</div>
+			</div>
+		</div>
+		<div class="copyright__block">
+			<p class="copyright__text">&copy; 2020  Retail soft consulting</p>
+			<a href="diex.me" class="diex__link">Сайт разработал diex.me</a>
+		</div>
+	</div>
+</footer>
 
 
 <script src="js/jquery.min.js"></script>
@@ -328,6 +571,7 @@
 <script src="js/scroll-section.js"></script>
 <script src="js/jquery.malihu.PageScroll2id.js"></script>
 <script src="js/headhesive.min.js"></script>
+<script src="js/jquery.beefup.min.js"></script>
 
 <script src="js/main.js"></script>
 </body>
