@@ -142,7 +142,7 @@ img{
 
 .container {
 	max-width: 1140px;
-	/*outline: 1px solid red;*/
+	outline: 1px solid red;
 	overflow: hidden;
 	margin:0 auto;
 	padding: 0 20px;
@@ -832,6 +832,7 @@ a.button-last {
 	overflow: hidden;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-top: 72px;
 	margin-bottom: 75px;
 }
@@ -1081,44 +1082,93 @@ a.diex__link:hover {
     text-decoration: none;
 }
 
+/*Page Our Articles*/
 
+.header__articles {
+	overflow: hidden;
+	background-color: #0C2758;
+}
 
+.articles__panel {
+	background-color: #0C2758;
+}
 
+.header__article-bottom {
+	overflow: hidden;
+	margin-top: 114px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
 
+a.article__bottom-link {
+	text-decoration: none;
+	font-size: 1.375em;
+}
 
+a.article__bottom-link:hover {
+	text-decoration: none;
+}
 
+.article__bottom-item {
+	color: #fff;
+	font-size: 1.375em;
+	position: relative;
+	padding-left: 13px;
+	margin-left: 13px;
+}
 
+.article__bottom-item::before {
+    content: '';
+    width: 2px;
+    height: 19px;
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transform: rotate(20deg);
+}
 
+.main__article {
+	overflow: hidden;
+	padding: 140px 0 145px 0; 
+}
 
+.page-aricle {
+	margin-top: 88px;
+}
 
+.page__article-product {
+	margin-top: -33px;
+}
 
+.pagination {
+	overflow: hidden;
+	padding-bottom: 10px;
+}
 
+.spisok__pagination {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
 
+.pagination__item {
+	font-size: 1.125em; 
+	padding-top: 8px;
+}
 
+a.pagination__item-link {
+	padding: 8px 12px 8px 12px;
+	text-decoration: none;
+	color: #0C2758;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a.pagination__item-link:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color:#0C2758; 
+}
 
 
 
