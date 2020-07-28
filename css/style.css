@@ -285,10 +285,10 @@ img{
 .menu__icon {
     position: relative;
     display: none;
-	width: 16px;
-    height: 20px;
+	width: 35px;
+    height: 30px;
     cursor: pointer;
-    margin: 23px 8px 0 0;
+    margin: 5px -3px 0 0;
 }
 
 .menu__icon-line {
@@ -296,6 +296,7 @@ img{
 	width: 24px;
 	height: 2px;
 	background-color: #fff;
+	margin: 14px 0 0 5px;
 }
 
 .menu__icon-line::before {
