@@ -344,7 +344,7 @@ img{
     position: absolute;
     position: fixed;
     width: 100%;
-    padding: 42px 0 42px 15px;
+    padding: 35px 0 42px 15px;
     background-color: #102143;
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
@@ -356,7 +356,7 @@ img{
 .mobile-nav--active {
   left: -15px;
   position: absolute;
-  transform: translateY(612px);
+  transform: translateY(608px);
 }
 
 
@@ -1269,11 +1269,11 @@ a.pagination__item-link:hover {
 
 
 	.headhesive {
-		padding: 25px 0 5px 0;
+		padding: 25px 0 10px 0;
 	}
 
 .headhesive--stick {
-    padding: 10px 0;
+        padding: 13px 0 10px 0;
 }
 	.header__top{
 		padding-bottom: 10px;
