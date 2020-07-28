@@ -142,7 +142,6 @@ img{
 
 .container {
 	max-width: 1140px;
-	/*outline: 1px solid red;*/
 	overflow: hidden;
 	margin:0 auto;
 	padding: 0 20px;
@@ -280,6 +279,85 @@ img{
 .popup__text {
 	padding-top: 90px;
 }
+
+/* --------------- Mobile navigation button ----------- */
+
+.menu__icon {
+    position: relative;
+    display: none;
+	width: 16px;
+    height: 20px;
+    cursor: pointer;
+    margin: 23px 8px 0 0;
+}
+
+.menu__icon-line {
+	position: relative;
+	width: 24px;
+	height: 2px;
+	background-color: #fff;
+}
+
+.menu__icon-line::before {
+	position: absolute;
+	left: 0;
+	top: -7px;
+	content: '';
+	width: 24px;
+	height: 2px;
+	background-color: #fff;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu__icon-line::after {
+	position: absolute;
+	left: 0;
+	top: 7px;
+	content: '';
+	width: 24px;
+	height: 2px;
+	background-color: #fff;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu__icon.menu-icon-active .menu__icon-line {
+	background-color: transparent;
+}
+
+.menu__icon.menu-icon-active .menu__icon-line::before {
+	transform: rotate(45deg);
+	top: 0;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu__icon.menu-icon-active .menu__icon-line::after {
+	transform: rotate(-45deg);
+	top: 0;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* ----------------- Мобильная навигация ----------------- */
+.mobile__nav {
+    z-index: 99;
+    display:block;
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    padding: 42px 0 42px 15px;
+    background-color: #102143;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+    top: -540px;
+    left: -15px;
+}
+
+.mobile-nav--active {
+  left: -15px;
+  position: absolute;
+  transform: translateY(612px);
+}
+
 
 .header__center {
    margin-top: 50px;
@@ -1172,132 +1250,6 @@ a.pagination__item-link:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1090px) {
 	.menu__list-item {
 		margin-right: 22px;
@@ -1311,6 +1263,125 @@ a.pagination__item-link:hover {
 		margin-left: 10px;
 	}
 }
+
+@media (max-width: 990px) {
+
+
+	.headhesive {
+		padding: 25px 0 5px 0;
+	}
+
+.headhesive--stick {
+    padding: 10px 0;
+}
+	.header__top{
+		padding-bottom: 10px;
+	}
+
+	.header__top-logo {
+    flex-shrink: 0;
+    height: 30px;
+    width: 92px;
+}
+
+	.header__top-block {
+		display: none;
+	}
+
+	.menu__icon {
+       display: block;
+    }
+
+      .mobile__nav {
+        display: block;
+    }
+
+    .block__language-call {
+    	margin-left: 0;
+    	margin-bottom: 38px;
+    	justify-content: center;
+    }
+
+    .button__call-link {
+    margin-left: 35px;
+}
+
+    .menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list-item {
+         margin-right: 0;
+         margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.menu__list-item:last-child {
+         margin-bottom: 0;
+}
+
+.menu__list-item::before {
+	content: '';
+	position: absolute;
+	top: 38px;
+	left: 0;
+	height: 1px;
+	width: 100%;
+	background-color: #fff;
+}
+}
+
+
+
+@media (max-width: 360px) {
+	.button__call-link {
+    margin-left: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
