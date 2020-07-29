@@ -268,6 +268,108 @@
 }
 
 
+
+/*Dots Advantage*/
+
+
+.slick-initialized .slider__item.slick-slide {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider__img {
+  width: 100px;
+  margin: 0 10px 0 0;
+  flex: 0 0 auto;
+}
+
+.slider__dots-advantage {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-128px)  translateY(-10px);
+}
+
+.slider__dots-advantage li {
+  display: inline-block;
+  margin: 0 10px;
+  border: 1px solid transparent;
+}
+
+.slider__dots-advantage .slick-active {
+  
+}
+
+/*Dots Prices*/
+
+
+.slick-initialized .slider__item.slick-slide {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider__img {
+  width: 100px;
+  margin: 0 10px 0 0;
+  flex: 0 0 auto;
+}
+
+.slider__dots-prices {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-270px) translateY(-10px);
+}
+
+.slider__dots-prices li {
+  display: inline-block;
+  margin: 0 10px;
+  border: 1px solid transparent;
+}
+
+.slider__dots-prices li button:before
+{
+    font-family: 'slick';
+    font-size: 8px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .4;
+    color: #0C2758;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slider__dots-prices li.slick-active button:before
+{
+    opacity: 1;
+    color: #0C2758;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 590px) {
 
 
@@ -282,6 +384,25 @@
     left: 50%;
     transform: rotate(-90deg) translateX(-99px)  translateY(-10px);
    }
+
+   .slider__dots-advantage {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-141px)  translateY(-10px);
+}
+
+
+.slider__dots-prices {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-270px) translateY(-10px);
+}
 }
 
 
@@ -296,6 +417,25 @@
     left: 50%;
     transform: rotate(-90deg) translateX(-75px)  translateY(-10px);
    }
+
+   .slider__dots-advantage {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-185px)  translateY(-10px);
+}
+
+
+.slider__dots-prices {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-270px) translateY(-10px);
+}
 }
 
 
@@ -323,4 +463,23 @@
     left: 50%;
     transform: rotate(-90deg) translateX(-53px) translateY(-10px);
    }
+
+   .slider__dots-advantage {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-223px)  translateY(-10px);
+}
+
+
+.slider__dots-prices {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-270px) translateY(-10px);
+}
 }

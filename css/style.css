@@ -705,6 +705,10 @@ a.services__section-more::before {
 
 }
 
+.advantage__mobile {
+	display: none;
+}
+
 .prices {
 	overflow: hidden;
 	padding: 105px 0 125px 0;
@@ -775,14 +779,15 @@ a.services__section-more::before {
 }
 
 .prices__carousel-slide {
-	width: 31.58%;
-	border-top: 3px solid #0C2758;
-	padding: 60px 0 55px 0;
-	overflow: hidden;
-	margin-bottom: 40px;
-	box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.06);
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	    width: 31.58%;
+    border-top: 3px solid #0C2758;
+    padding: 60px 0 55px 0;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.06);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 
 .prices__carousel-slide:last-child {
@@ -859,6 +864,10 @@ a.button-center:hover {
 
 a.button-last {
 	margin-top: 54px;
+}
+
+.block__prices-mobile {
+	display: none;
 }
 
 .tab-item-2 {
@@ -1386,6 +1395,43 @@ a.pagination__item-link:hover {
     width: 60px;
 }
 
+.advantage__text {
+	display: none;
+} 
+
+.advantage__block {
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.advantage {
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.advantage__mobile {
+	margin-top: 40px;
+	display: block;
+}
+
+.advantage__section-mobile {
+	width: 98%;
+	margin: 0 1%;
+}
+
+.section__mobile-top {
+	border-right: 1px solid #fff;
+    margin-bottom: 45px;
+    padding-right: 15px;
+}
+
+.section__mobile-bottom {
+	    text-align: right;
+    border-left: 1px solid #fff;
+    padding-left: 15px;
+}
+
+
 }
 
 @media (max-width: 768px) {
@@ -1446,6 +1492,46 @@ a.pagination__item-link:hover {
 .about__company-slide {
 	margin-top: 32px;
 	width: 100%;
+}
+
+.prices__carousel {
+	display: none;
+}
+
+.block__prices-mobile {
+	display: block;
+}
+
+.prices__carousel-slides {
+	position: relative;
+}
+
+.carousel__slide-block {
+	width: 80%;
+    border-top: 3px solid #0C2758;
+    padding: 60px 0 55px 0;
+    overflow: hidden;
+    margin: 0 auto 40px auto;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.06);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /*position: relative;*/
+}
+
+.carousel__slide-block::before {
+    position: absolute;
+    content: '';
+    bottom: 16px;
+    left: 20%;
+    width: 60%;
+    height: 22px;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.06);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.prices {
+	padding-bottom: 40px;
 }
 
 }
@@ -1525,6 +1611,19 @@ a.pagination__item-link:hover {
 
 .about__company-paragraph {
 	font-size: 2em;
+}
+
+.prices__block-paragraph {
+	font-size: 2em;
+}
+
+.prices {
+
+	padding-top: 75px;
+}
+
+.prices__block-iiko {
+	margin-top: 15px;
 }
 
 

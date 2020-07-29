@@ -93,7 +93,7 @@ $(document).ready(function(){
       settings: {
           slidesToShow: 1,
    dotsClass: 'slick-dots slider__dots',
-          
+
       }
     }
    ]  
@@ -113,6 +113,53 @@ $(document).ready(function(){
   prevArrow: '<div class="prev"></div>',
   nextArrow: '<div class="next"></div>',
   });
+
+ /////////////////////////////////////
+
+
+ $('.block__advantage-mobile').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 600,
+    arrows: false,
+    dots: true,
+    infinite: true,
+  slidesToShow: 1,
+   dotsClass: 'slick-dots slider__dots-advantage',
+     responsive: [
+    {
+      breakpoint: 590,
+      settings: {
+   dotsClass: 'slick-dots slider__dots-advantage',
+
+      }
+    }
+   ]  
+
+  });
+
+
+ $('.prices__carousel-mobile').slick({
+    // autoplay: true,
+    // autoplaySpeed: 3000,
+    // speed: 600,
+    arrows: false,
+    dots: true,
+    infinite: true,
+  slidesToShow: 1,
+   dotsClass: 'slick-dots slider__dots-prices',
+     responsive: [
+    {
+      breakpoint: 590,
+      settings: {
+   dotsClass: 'slick-dots slider__dots-prices',
+
+      }
+    }
+   ]  
+
+  });
+
 
 
 });
