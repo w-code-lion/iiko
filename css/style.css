@@ -584,6 +584,17 @@ a.services__section-more::before {
     background-color: #0C2758;
 }
 
+.services__mobile {
+	display: none;
+}
+
+.block__services-mobile {
+	display: none;
+	padding-bottom: 35px;
+	overflow: hidden;
+	margin-top: 72px;
+}
+
 .about__company {
     padding: 150px 0 160px 0;
 }
@@ -1337,6 +1348,46 @@ a.pagination__item-link:hover {
 }
 }
 
+@media (max-width: 890px) {
+
+	.our__services {
+		padding-bottom: 10px;
+	}
+	.block__services {
+		display: none;
+	}
+
+	.services__mobile {
+		display: block;
+	}
+
+	.block__services-mobile {
+	display: block;
+}
+
+.sections {
+	    width: 320px;
+    height: 320px;
+    background: white;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding-bottom: 35px;
+}
+
+.section__mobile {
+	    text-align: center;
+    padding-top: 35px;
+    height: 295px;
+}
+
+.services__section-img {
+    margin: 0 auto 5px auto;
+    height: 60px;
+    width: 60px;
+}
+
+}
+
 @media (max-width: 768px) {
 	.about__top {
     display: flex;
@@ -1370,6 +1421,23 @@ a.pagination__item-link:hover {
 @media (max-width: 590px) {
 	.header {
 		padding-bottom: 190px;
+	}
+
+	.main__paragraph-white {
+		font-size: 2em;
+	}
+
+	.our__services {
+		padding-top: 40px;
+	}
+
+	.main__text-white {
+		margin-top: 15px;
+		line-height: 1.4;
+	}
+
+	.block__services-mobile {
+		margin-top: 40px;
 	}
 
 	.slider__top-paragraph {
@@ -1414,6 +1482,16 @@ a.pagination__item-link:hover {
     font-size: 2em;
 }
 
+.sections {
+	margin-right: 10px;
+    margin-left: 10px;
+}
+
+.section__mobile {
+	height: 250px
+}
+
+
 }
 
 @media (max-width: 425px) {
@@ -1448,6 +1526,10 @@ a.pagination__item-link:hover {
 
 .numbers__text {
 	font-size: 0.875em;
+}
+
+.services__section-text {
+	width: 90%;
 }
 }
 

@@ -78,6 +78,30 @@ $(document).ready(function(){
 
  ////////////////////////////////////
 
+ $('.block__services-mobile').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 600,
+    arrows: false,
+    dots: true,
+    infinite: true,
+  slidesToShow: 2,
+   dotsClass: 'slick-dots slider__dots',
+     responsive: [
+    {
+      breakpoint: 590,
+      settings: {
+          slidesToShow: 1,
+   dotsClass: 'slick-dots slider__dots',
+          
+      }
+    }
+   ]  
+
+  });
+
+ ////////////////////////////////////
+
  $('.company__carousel').slick({
     autoplay: true,
     autoplaySpeed: 3000,

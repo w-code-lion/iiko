@@ -166,6 +166,43 @@
 }
 
 
+
+
+/*Dots Services*/
+
+
+.slick-initialized .slider__item.slick-slide {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider__img {
+  width: 100px;
+  margin: 0 10px 0 0;
+  flex: 0 0 auto;
+}
+
+.slider__dots {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-120px)  translateY(-10px);
+}
+
+.slider__dots li {
+  display: inline-block;
+  margin: 0 10px;
+  border: 1px solid transparent;
+}
+
+.slider__dots .slick-active {
+  
+}
+
+
+
 /*Arrow about company*/
 
 .prev
@@ -232,10 +269,18 @@
 
 
 @media (max-width: 590px) {
+
+
     .slick-dots {
     top: 50%;
     left: 0;
     transform: rotate(-90deg) translateX(-45px) translateY(78px);
+   }
+
+   .slider__dots {
+    position: absolute;
+    left: 50%;
+    transform: rotate(-90deg) translateX(-99px)  translateY(-10px);
    }
 }
 
@@ -246,6 +291,11 @@
     left: 0;
     transform: rotate(-90deg) translateX(-45px) translateY(78px);
    }
+
+     .slider__dots {
+    left: 50%;
+    transform: rotate(-90deg) translateX(-76px)  translateY(-10px);
+   }
 }
 
 
@@ -255,5 +305,9 @@
     top: 63%;
     left: 0;
     transform: rotate(-90deg) translateX(-45px) translateY(78px);
+   }
+     .slider__dots {
+    left: 50%;
+    transform: rotate(-90deg) translateX(-53px) translateY(-10px);
    }
 }
