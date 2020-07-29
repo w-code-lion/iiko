@@ -1221,6 +1221,16 @@ a.article__bottom-link:hover {
 	text-decoration: none;
 }
 
+.articles__section-two {
+	width: 31.58%;
+	padding-bottom: 2px;
+	margin-right: 2.63%;
+}
+
+.articles__section-two:nth-child(3n+2) {
+	margin-right: 0;
+}
+
 .article__bottom-item {
 	color: #fff;
 	font-size: 1.375em;
@@ -1378,6 +1388,14 @@ a.pagination__item-link:hover {
 
 .questions {
 	padding-bottom: 22px;
+}
+.header__article-bottom {
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.main__article{
+	padding: 100px 0;
 }
 }
 
@@ -1572,6 +1590,31 @@ a.pagination__item-link:hover {
     margin-right: 0;
 }
 
+.articles__section-two {
+    width: 45%;
+    padding-bottom: 2px;
+}
+
+.page-aricle {
+    margin-top: 40px;
+}
+
+.articles__section-two:nth-child(1n) {
+    margin-right: 0;
+}
+
+.articles__block-products {
+	justify-content: space-between;
+}
+
+.main__article {
+    padding: 68px 0;
+}
+
+.page__article-product {
+    margin-top: -5px;
+}
+
 .footer__block {
     display: flex;
     flex-direction: column;
@@ -1763,6 +1806,10 @@ a.confidentiality__link {
     margin-bottom: 30px;
 }
 
+.articles__section-two {
+    width: 48%;
+}
+
 .articles__block-paragraph {
 	font-size: 2em;
 }
@@ -1795,6 +1842,10 @@ a.confidentiality__link {
 .articles__section {
 	width: 100%;
 	margin-right: 0;
+}
+
+.articles__section-two {
+    width: 100%;
 }
 }
 
@@ -1838,6 +1889,18 @@ a.confidentiality__link {
 
 a.article__button {
 	width: 100%;
+}
+
+.article__bottom-item {
+	font-size: 1em;
+}
+
+a.article__bottom-link {
+	font-size: 1em;
+}
+
+.article__bottom-item::before {
+	top: 1px;
 }
 }
 
