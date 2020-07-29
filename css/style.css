@@ -345,7 +345,7 @@ img{
     position: fixed;
     width: 100%;
     padding: 35px 0 42px 15px;
-    background-color: #102143;
+    background-color:  #0C2758;
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
@@ -356,7 +356,7 @@ img{
 .mobile-nav--active {
   left: -15px;
   position: absolute;
-  transform: translateY(608px);
+  transform: translateY(604px);
 }
 
 
@@ -1269,11 +1269,12 @@ a.pagination__item-link:hover {
 
 
 	.headhesive {
-		padding: 25px 0 10px 0;
+		padding: 12px 0 8px 0;
+		background-color:  #0C2758;;
 	}
 
 .headhesive--stick {
-        padding: 13px 0 10px 0;
+        padding: 12px 0 8px 0;
 }
 	.header__top{
 		padding-bottom: 10px;
@@ -1336,6 +1337,65 @@ a.pagination__item-link:hover {
 }
 }
 
+@media (max-width: 590px) {
+	.header {
+		padding-bottom: 190px;
+	}
+
+	.slider__top-paragraph {
+		font-size: 1.8125em;
+	}
+
+	.slider__top-text {
+		font-size: 1.125em;
+	}
+
+	.header__center {
+    margin-top: 10px;
+}
+
+.header__bottom {
+	width: 100%;
+}
+
+	.block__brends {
+    padding-left: 30px;
+}
+
+}
+
+@media (max-width: 425px) {
+
+	.header {
+		padding-bottom: 170px;
+	}
+    .header__bottom {
+	height: 100px;
+}
+
+	.block__brends {
+    margin-top: 30px;
+}
+
+.block__brends {
+	padding-left: 0;
+}
+
+.brend__logo {
+	margin:0 auto;
+}
+
+.about {
+	margin-top: -15px;
+}
+}
+
+
+@media (max-width: 375px) {
+	.header {
+		padding-bottom: 130px;
+	}
+}
 
 
 @media (max-width: 360px) {

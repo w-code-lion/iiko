@@ -85,7 +85,7 @@
 {
     position: absolute;
     top: 30%;
-    right: 0;
+    left: 98%;
 
     display: block;
 
@@ -228,4 +228,32 @@
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+}
+
+
+@media (max-width: 590px) {
+    .slick-dots {
+    top: 50%;
+    left: 0;
+    transform: rotate(-90deg) translateX(-45px) translateY(78px);
+   }
+}
+
+
+@media (max-width: 425px) {
+    .slick-dots {
+    top: 57%;
+    left: 0;
+    transform: rotate(-90deg) translateX(-45px) translateY(78px);
+   }
+}
+
+
+
+@media (max-width: 320px) {
+        .slick-dots {
+    top: 63%;
+    left: 0;
+    transform: rotate(-90deg) translateX(-45px) translateY(78px);
+   }
 }

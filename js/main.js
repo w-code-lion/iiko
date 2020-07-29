@@ -49,7 +49,31 @@ $(document).ready(function(){
     dots: false,
     infinite: true,
   slidesToShow: 1,
-  variableWidth: true
+  variableWidth: true,
+
+   responsive: [
+    {
+      breakpoint: 590,
+      settings: {
+        arrows: false,
+          variableWidth: false,
+          slidesToShow: 2
+      }
+    },
+
+
+     {
+      breakpoint: 425,
+      settings: {
+          slidesToShow: 1,
+           arrows: false,
+          variableWidth: false,
+          
+      }
+    }
+
+    ]
+
   });
 
  ////////////////////////////////////
