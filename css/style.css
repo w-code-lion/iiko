@@ -1337,6 +1337,36 @@ a.pagination__item-link:hover {
 }
 }
 
+@media (max-width: 768px) {
+	.about__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__top-foto {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.about__top-text {
+    margin-top: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.br {
+     padding-right: 0; 
+}
+
+.main__paragraph {
+    margin-bottom: 17px;
+}
+
+.more {
+    margin-top: 20px;
+}
+}
+
 @media (max-width: 590px) {
 	.header {
 		padding-bottom: 190px;
@@ -1360,6 +1390,28 @@ a.pagination__item-link:hover {
 
 	.block__brends {
     padding-left: 30px;
+}
+
+.about {
+	padding-bottom: 80px;
+}
+
+.about__top {
+    margin-bottom: 50px;
+}
+
+
+.about__bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__bottom-numbers {
+	width: 40%;
+	margin-bottom: 20px;
+}
+.main__paragraph {
+    font-size: 2em;
 }
 
 }
@@ -1387,6 +1439,15 @@ a.pagination__item-link:hover {
 
 .about {
 	margin-top: -15px;
+	padding-bottom: 60px;
+}
+
+.about__bottom-numbers {
+	padding:20px 0 20px 0;
+}
+
+.numbers__text {
+	font-size: 0.875em;
 }
 }
 
@@ -1395,6 +1456,10 @@ a.pagination__item-link:hover {
 	.header {
 		padding-bottom: 130px;
 	}
+
+	.about__bottom-numbers {
+    width: 46%;
+}
 }
 
 
@@ -1404,7 +1469,11 @@ a.pagination__item-link:hover {
 }
 }
 
-
+@media (max-width: 320px) {
+	.main__paragraph {
+    font-size: 1.9em;
+}
+}
 
 
 
