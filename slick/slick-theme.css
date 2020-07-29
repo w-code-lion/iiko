@@ -299,6 +299,19 @@
 }
 
 
+@media (max-width: 375px) {
+    .next {
+        bottom: 10px;
+        right: 15px;
+    }
+
+     .prev {
+        bottom: 10px;
+        right: 90px;
+    }
+}
+
+
 
 @media (max-width: 320px) {
         .slick-dots {

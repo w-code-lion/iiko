@@ -1416,6 +1416,38 @@ a.pagination__item-link:hover {
 .more {
     margin-top: 20px;
 }
+
+.about__company {
+    padding: 70px 0 85px 0;
+}
+
+.about__company__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__company-text {
+	width: 100%;
+	padding-top: 10px;
+}
+
+.iiko {
+    margin-bottom: 10px;
+}
+
+.iiko-two {
+    margin-bottom: 20px;
+}
+
+.about__company-paragraph {
+	margin-bottom: 20px;
+}
+
+.about__company-slide {
+	margin-top: 32px;
+	width: 100%;
+}
+
 }
 
 @media (max-width: 590px) {
@@ -1489,6 +1521,10 @@ a.pagination__item-link:hover {
 
 .section__mobile {
 	height: 250px
+}
+
+.about__company-paragraph {
+	font-size: 2em;
 }
 
 
