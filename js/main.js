@@ -140,9 +140,9 @@ $(document).ready(function(){
 
 
  $('.prices__carousel-mobile').slick({
-    // autoplay: true,
-    // autoplaySpeed: 3000,
-    // speed: 600,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 600,
     arrows: false,
     dots: true,
     infinite: true,
@@ -153,6 +153,29 @@ $(document).ready(function(){
       breakpoint: 590,
       settings: {
    dotsClass: 'slick-dots slider__dots-prices',
+
+      }
+    }
+   ]  
+
+  });
+
+ ///////////////////////////////////////
+
+  $('.questions__accordion-mobile').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 600,
+    arrows: false,
+    dots: true,
+    infinite: true,
+  slidesToShow: 1,
+   dotsClass: 'slick-dots slider__dots-accordion',
+     responsive: [
+    {
+      breakpoint: 590,
+      settings: {
+   dotsClass: 'slick-dots slider__dots-accordion',
 
       }
     }

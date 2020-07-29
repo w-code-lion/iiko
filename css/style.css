@@ -906,6 +906,10 @@ a.button-last {
 	padding-left: 25px;
 }
 
+.accordion__mobile {
+	display: none;
+}
+
 .articles {
 	overflow: hidden;
 	padding: 140px 0 160px 0;
@@ -1270,7 +1274,6 @@ a.pagination__item-link:hover {
 }
 
 
-
 @media (max-width: 1090px) {
 	.menu__list-item {
 		margin-right: 22px;
@@ -1355,6 +1358,19 @@ a.pagination__item-link:hover {
 	width: 100%;
 	background-color: #fff;
 }
+
+.questions__accordion {
+	display: none;
+}
+
+.accordion__mobile {
+	display: block;
+	margin-top: 38px;
+}
+
+.questions {
+	padding-bottom: 22px;
+}
 }
 
 @media (max-width: 890px) {
@@ -1430,7 +1446,6 @@ a.pagination__item-link:hover {
     border-left: 1px solid #fff;
     padding-left: 15px;
 }
-
 
 }
 
@@ -1626,6 +1641,9 @@ a.pagination__item-link:hover {
 	margin-top: 15px;
 }
 
+.questions {
+	padding-top: 38px;
+}
 
 }
 
