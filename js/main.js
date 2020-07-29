@@ -178,11 +178,47 @@ $(document).ready(function(){
    dotsClass: 'slick-dots slider__dots-accordion',
 
       }
-    }
+    },
    ]  
 
   });
 
+///////////////////////////////////////////////////
+
+  $('.block__partners-mobile').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 600,
+    arrows: false,
+    dots: false,
+    infinite: true,
+  slidesToShow: 4,
+     responsive: [
+    {
+      breakpoint: 650,
+      settings: {
+       
+        slidesToShow: 3,
+      }
+    },
+
+     {
+      breakpoint: 510,
+      settings: {
+       
+        slidesToShow: 2,
+      }
+    },
+     {
+      breakpoint: 360,
+      settings: {
+       
+        slidesToShow: 1,
+      }
+    }
+   ]  
+
+  });
 
 
 });
