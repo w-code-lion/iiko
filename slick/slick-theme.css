@@ -294,7 +294,7 @@
 
      .slider__dots {
     left: 50%;
-    transform: rotate(-90deg) translateX(-76px)  translateY(-10px);
+    transform: rotate(-90deg) translateX(-75px)  translateY(-10px);
    }
 }
 
