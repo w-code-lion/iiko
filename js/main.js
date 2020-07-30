@@ -81,8 +81,7 @@ $(document).ready(function(){
       breakpoint: 590,
       settings: {
         arrows: false,
-          variableWidth: false,
-          slidesToShow: 2
+          
       }
     },
 
@@ -90,9 +89,8 @@ $(document).ready(function(){
      {
       breakpoint: 425,
       settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
            arrows: false,
-          variableWidth: false,
           
       }
     }
@@ -164,7 +162,7 @@ $(document).ready(function(){
   });
 
 
- $('.prices__carousel-mobile').slick({
+   $('.prices__carousel-mobile').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 600,
@@ -184,6 +182,8 @@ $(document).ready(function(){
    ]  
 
   });
+
+
 
  ///////////////////////////////////////
 

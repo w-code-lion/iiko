@@ -498,6 +498,11 @@
         bottom: 10px;
         right: 90px;
     }
+
+         .slider__dots {
+    left: 50%;
+    transform: rotate(-90deg) translateX(-72px)  translateY(-10px);
+   }
 }
 
 
