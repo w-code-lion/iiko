@@ -1301,6 +1301,69 @@ a.pagination__item-link:hover {
 	background-color:#0C2758; 
 }
 
+/*Name Articles*/
+
+.article__item-link {
+	text-decoration: none;
+}
+.article__item-link:hover {
+	text-decoration: none;
+}
+
+.main__article-name {
+	padding: 135px 0 215px 0;
+}
+
+.name__block-text {
+	overflow: hidden;
+	padding: 0 20px;
+	max-width: 810px;
+	margin: 0 auto;
+}
+
+.big__foto {
+	max-height: 460px;
+    overflow: hidden;
+    margin-bottom: 42px;
+}
+
+.foto__main {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.paragraph__name {
+	font-weight: 300;
+	font-size: 2.25em;
+	width: 93%;
+	margin-bottom: 35px;
+}
+
+.main__block-text {
+	font-weight: 300;
+	font-size: 1.125em;
+	margin-bottom: 22px;
+}
+
+.main__block-date {
+	font-weight: 300;
+	font-size: 1.125em;
+	color: #000;
+	margin-top: 47px;
+	position: relative;
+}
+
+.main__block-date::before {
+	content: '';
+	position: absolute;
+	top: -17px;
+	left: 0;
+	height: 2px;
+	width: 93px;
+	background-color: #364274;
+}
+
 
 @media (max-width: 1090px) {
 	.menu__list-item {
