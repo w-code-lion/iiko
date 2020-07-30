@@ -21,17 +21,26 @@ $(document).ready(function(){
       });
     })(jQuery);
 
+////////////////////////////////////////
+
+  // кнопка вверх
+    $(function() {
+        $('.top').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+        });
+    });    
+
 
 /////////////////////////////////////////////
+
+// Header Fixed
 
      var options = {
         offset: 20
      }
-      
 
       var header = new Headhesive('.header__panel', options);
 
-       $('.popup-link').magnificPopup({});
 
 /////////////////////////////////////////////
 
@@ -248,13 +257,10 @@ $(document).ready(function(){
 
 });
 
-/////////////////////////////////////////
-
-$(document).ready(function(){
-  $('.popup-link').magnificPopup({});
-
-});
 ////////////////////////////////////////
+
+// Animate number
+
 $(document).ready(function(){
 
     var show = true;
@@ -281,6 +287,8 @@ $(document).ready(function(){
 
 ///////////////////////////////////////////
 
+// Tab
+
 $(document).ready(function(){
       $(".tab_item").not(":first").hide();
 $(".prices__block-products .tab").click(function() {
@@ -292,6 +300,7 @@ $(".prices__block-products .tab").click(function() {
 
 ////////////////////////////////////////////
 
+// Accordion
 $(document).ready(function(){
 
     
@@ -301,3 +310,41 @@ $(document).ready(function(){
 
 
 });
+
+////////////////////////////////////////////////
+
+ // Modal Window
+    $(document).ready(function() {
+        var overlay = $('.modal__overlay');
+        var open_modal = $('.open_modal');
+        var close = $('.modal__close, .modal__overlay');
+        var modal = $('.modal');
+
+         open_modal.click( function(event){
+             event.preventDefault();
+             var div = $(this).attr('href');
+             var title = $(this).attr('data-title');
+             var desc = $(this).attr('data-desc');
+             $('.modal__title--target').empty();
+             $('.modal__desc--target').empty();
+             $('.modal__title--target').append(title);
+             $('.modal__desc--target').append(desc);
+             overlay.fadeIn(400,
+                 function(){
+                     $(div)
+                         .css('display', 'block')
+                         .animate({opacity: 1}, 200);
+             });
+         });
+
+         close.click( function(){
+                var modal = $(this).parents('.modal');
+                modal
+                 .animate({opacity: 0}, 200,
+                     function(){
+                         $(this).css('display', 'none',);
+                         overlay.fadeOut(400);
+                     }
+                 );
+         });
+    });
