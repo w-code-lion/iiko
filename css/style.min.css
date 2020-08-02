@@ -1993,6 +1993,12 @@ a.confidentiality__link {
 .articles__section-two {
     width: 100%;
 }
+
+.owl-price .prices__carousel-slide {
+	width: 330px;
+	margin: 0 auto;
+}
+
 }
 
 @media (max-width: 425px) {
