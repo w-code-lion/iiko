@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+     <!-- Nice Select -->
+    <link rel="stylesheet" href="css/nice-select.css">
+
      <!-- Стили слайдера SLICK -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -30,28 +33,32 @@
             	<nav class="menu" id="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#about">О нас</a>
+                            <a class="menu__link" href="index.html#about">О нас</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#our__services">Услуги</a>
+                            <a class="menu__link" href="index.html#our__services">Услуги</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#about__company">iiko</a>
+                            <a class="menu__link" href="index.html#about__company">iiko</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#prices">Цены</a>
+                            <a class="menu__link" href="index.html#prices">Цены</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#questions">Вопросы</a>
+                            <a class="menu__link" href="index.html#questions">Вопросы</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#articles">Статьи</a>
+                            <a class="menu__link" href="index.html#articles">Статьи</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="block__language-call">
-                	<p class="language__item line"><a href="#" class="language__item-link">РУС</a></p>
-                	<p class="language__item"><a href="#" class="language__item-link">УКР</a></p>
+                 <div class="block__language-call">
+                    <form class="language__select">
+		            	<select class="select">
+		            		<option  value="1">RU</option>
+		            		<option value="2">UK</option>
+		            	</select>
+            	    </form>
                 	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
             </div>
@@ -63,29 +70,33 @@
             <div id="mobile__nav" class="mobile__nav">
                 <div class="container">
 	                <div class="block__language-call">
-	                	<p class="language__item line"><a href="#" class="language__item-link">РУС</a></p>
-	                	<p class="language__item"><a href="#" class="language__item-link">УКР</a></p>
+	                    <form class="language__select">
+			            	<select class="select">
+			            		<option  value="1">RU</option>
+			            		<option value="2">UK</option>
+			            	</select>
+	            	    </form>
 	                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
 	                </div>
 	                <nav class="menu" id="menu">
 	                    <ul class="menu__list">
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#about">О нас</a>
+	                            <a class="menu__link" href="index.html#about">О нас</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#our__services">Услуги</a>
+	                            <a class="menu__link" href="index.html#our__services">Услуги</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#about__company">iiko</a>
+	                            <a class="menu__link" href="index.html#about__company">iiko</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#prices">Цены</a>
+	                            <a class="menu__link" href="index.html#prices">Цены</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#questions">Вопросы</a>
+	                            <a class="menu__link" href="index.html#questions">Вопросы</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#articles">Статьи</a>
+	                            <a class="menu__link" href="index.html#articles">Статьи</a>
 	                        </li>
 	                    </ul>
 	                </nav>
@@ -101,8 +112,6 @@
 <div class="main__article" id="articles">
 	<div class="container">
 		<div class="articles__block">
-				<h2 class="articles__block-paragraph">Наши статьи</h2>
-				<p class="articles__block-iiko">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении. </p>
 			    <div class="articles__block-products page__article-product">
 				    <section class="articles__section-two page-aricle">
                         <div class="picture">
@@ -110,7 +119,7 @@
                         </div>
 				   	    <p class="section__paragraph">Тотальная автоматизация</p>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				    </section>
 				    <section class="articles__section-two page-aricle">
 				   	    <div class="picture">
@@ -118,7 +127,7 @@
                         </div>
 				   	    <p class="section__paragraph">Удобство интерфейса</p>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				    </section>
 				    <section class="articles__section-two page-aricle">
 				   	    <div class="picture">
@@ -126,7 +135,7 @@
                         </div>
 				   	    <p class="section__paragraph">Управление персоналом</p>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				    </section>
 	                 <section class="articles__section-two page-aricle">
 				   	    <div class="picture">
@@ -134,7 +143,7 @@
                         </div>
 				   	    <p class="section__paragraph">Управление персоналом</p>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				    </section>
 	                 <section class="articles__section-two page-aricle">
 				   	    <div class="picture">
@@ -142,7 +151,7 @@
                         </div>
 				   	    <p class="section__paragraph">Управление персоналом</p>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				    </section>
 	                 <section class="articles__section-two page-aricle">
 				   	    <div class="picture">
@@ -150,7 +159,7 @@
                         </div>
 				   	    <p class="section__paragraph">Управление персоналом</p>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				    </section>
 	                 <section class="articles__section-two page-aricle">
 				   	    <div class="picture">
@@ -158,7 +167,7 @@
                         </div>
 				   	    <p class="section__paragraph">Управление персоналом</p>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				    </section>
 	                 <section class="articles__section-two page-aricle">
 				   	    <div class="picture">
@@ -166,7 +175,7 @@
                         </div>
 				   	    <p class="section__paragraph">Управление персоналом</p>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				    </section>
 	                 <section class="articles__section-two page-aricle">
 				   	    <div class="picture">
@@ -174,13 +183,13 @@
                         </div>
 				   	    <p class="section__paragraph">Управление персоналом</p>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				    </section>
 			    </div>
 			    <div class="pagination">
 			    	<ul class="spisok__pagination">
 			    		<li class="pagination__item"><a href="#" class="pagination__item-link">1</a></li>
-			    		<li class="pagination__item"><a href="name-article.html" class="pagination__item-link">2</a></li>
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">2</a></li>
 			    		<li class="pagination__item"><a href="#" class="pagination__item-link">3</a></li>
 			    		<li class="pagination__item"><a href="#" class="pagination__item-link">4</a></li>
 			    		<li class="pagination__item"><a href="#" class="pagination__item-link">5</a></li>
@@ -235,10 +244,6 @@
 						</div>
                     </div>
 				</div>
-				<div class="footer__block-seti">
-					<a class="footer__facebook-link" href="#"><img src="images/footer__facebook.svg" alt="" class="footer__facebook"></a>
-					<a class="top" href="#top"><img src="images/arrow-top.svg" alt="" class="arrow__top"></a>
-				</div>
 			</div>
 		</div>
 		<div class="copyright__block">
@@ -267,24 +272,7 @@
         </div>
     </div>
 </div>
-
-<div id="article__popup" class="modal">
-    <div class="modal__block">
-        <div class="modal__content">
-            <div class="modal__in modal__in--width">
-                <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
-                    <span class="modal__close"></span>
-                </div>
-                <div class="modal__body modal__body--border">
-                    <p>Наши статьи</p>
-                </div>
-            </div>
-            <div class="modal__overlay"></div>
-        </div>
-    </div>
-</div>
- <div id="modal-form" class="modal">
+<div id="modal-form" class="modal">
     <div class="modal__block">
                 <div class="modal__content">
                     <div class="modal__in">
@@ -316,8 +304,6 @@
     </div>
 </div>
 
-
-
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.malihu.PageScroll2id.js"></script>
 <script src="slick/slick.min.js"></script>
@@ -325,7 +311,8 @@
 <script src="js/jquery.spincrement.js"></script>
 <script src="js/headhesive.min.js"></script>
 <script src="js/jquery.beefup.min.js"></script>
-
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

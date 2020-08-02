@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="css/nice-select.css">
+
      <!-- Стили слайдера SLICK -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -30,29 +33,33 @@
             	<nav class="menu" id="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#about">О нас</a>
+                            <a class="menu__link" href="index.html#about">О нас</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#our__services">Услуги</a>
+                            <a class="menu__link" href="index.html#our__services">Услуги</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#about__company">iiko</a>
+                            <a class="menu__link" href="index.html#about__company">iiko</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#prices">Цены</a>
+                            <a class="menu__link" href="index.html#prices">Цены</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#questions">Вопросы</a>
+                            <a class="menu__link" href="index.html#questions">Вопросы</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#articles">Статьи</a>
+                            <a class="menu__link" href="index.html#articles">Статьи</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="block__language-call">
-                	<p class="language__item line"><a href="#" class="language__item-link">РУС</a></p>
-                	<p class="language__item"><a href="#" class="language__item-link">УКР</a></p>
-                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+                    <form class="language__select">
+                        <select class="select">
+                            <option  value="1">RU</option>
+                            <option value="2">UK</option>
+                        </select>
+                    </form>
+                    <a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
             </div>
                 <!-- Кнопка для мобтльной навигации -->
@@ -63,29 +70,33 @@
             <div id="mobile__nav" class="mobile__nav">
                 <div class="container">
 	                <div class="block__language-call">
-	                	<p class="language__item line"><a href="#" class="language__item-link">РУС</a></p>
-	                	<p class="language__item"><a href="#" class="language__item-link">УКР</a></p>
-	                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
-	                </div>
+                        <form class="language__select">
+                            <select class="select">
+                                <option  value="1">RU</option>
+                                <option value="2">UK</option>
+                            </select>
+                        </form>
+                        <a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+                    </div>
 	                <nav class="menu" id="menu">
 	                    <ul class="menu__list">
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#about">О нас</a>
+	                            <a class="menu__link" href="index.html#about">О нас</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#our__services">Услуги</a>
+	                            <a class="menu__link" href="index.html#our__services">Услуги</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#about__company">iiko</a>
+	                            <a class="menu__link" href="index.html#about__company">iiko</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#prices">Цены</a>
+	                            <a class="menu__link" href="index.html#prices">Цены</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#questions">Вопросы</a>
+	                            <a class="menu__link" href="index.html#questions">Вопросы</a>
 	                        </li>
 	                        <li class="menu__list-item">
-	                            <a class="menu__link" href="#articles">Статьи</a>
+	                            <a class="menu__link" href="index.html#articles">Статьи</a>
 	                        </li>
 	                    </ul>
 	                </nav>
@@ -95,8 +106,8 @@
 	</div>
 	<div class="header__article-bottom">
 		<a href="index.html" class="article__bottom-link">Главная</a>
-		<p class="article__bottom-item"><a class="article__item-link" href="articles.html">Наши статьи</a></p>
-		<p class="article__bottom-item">Название статьи</p>
+		<p class="article__bottom-itemone"><a class="article__item-linktwo" href="articles.html">Наши статьи</a></p>
+		<p class="article__bottom-itemtwo">Название статьи</p>
 	</div>
 </header>
 <div class="main__article-name">
@@ -152,10 +163,6 @@
 							<img class="partners__logo" src="images/footer__dribble.png">
 						</div>
                     </div>
-				</div>
-				<div class="footer__block-seti">
-					<a class="footer__facebook-link" href="#"><img src="images/footer__facebook.svg" alt="" class="footer__facebook"></a>
-					<a class="top" href="#top"><img src="images/arrow-top.svg" alt="" class="arrow__top"></a>
 				</div>
 			</div>
 		</div>
@@ -217,6 +224,7 @@
     </div>
 </div>
 
+
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.malihu.PageScroll2id.js"></script>
 <script src="slick/slick.min.js"></script>
@@ -224,8 +232,8 @@
 <script src="js/jquery.spincrement.js"></script>
 <script src="js/headhesive.min.js"></script>
 <script src="js/jquery.beefup.min.js"></script>
-
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 <script src="js/main.js"></script>
-
 </body>
 </html>

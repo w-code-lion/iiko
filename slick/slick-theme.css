@@ -188,7 +188,7 @@
   top: 50%;
   left: 50%;
   text-align: center;
-  transform: rotate(-90deg) translateX(-120px)  translateY(-10px);
+  transform: rotate(-90deg) translateX(-118px)  translateY(-10px);
 }
 
 .slider__dots li {
@@ -207,28 +207,28 @@
 
 .prev
 {
-    height: 68px;
-    width: 70px;
+    height: 48px;
+    width: 48px;
     font-size: 0;
 
     position: absolute;
-    bottom:  25px;
-    right: 102px;
+    bottom:  33px;
+    right: 95px;
     display: block;
     cursor: pointer;
 
     color: transparent;
-    border:none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     outline: none;
     background: none;
     z-index: 3;
     opacity: 1;
     
-    background-color: #0C2758;
+    background-color: none;
 
     background-image: url(../images/arrow-prev.svg);
     background-repeat: no-repeat;
-    background-position: 25px 50%;
+    background-position: 14px 50%;
     -webkit-transition: 0.3s;
      -moz-transition: 0.3s;
      -o-transition: 0.3s;
@@ -240,27 +240,27 @@
 
 
 .next {
-    height: 68px;
-    width: 70px;
+    height: 48px;
+    width: 48px;
     font-size: 0;
     position: absolute;
-    bottom: 25px;
-    right: 27px;
+    bottom: 33px;
+    right: 36px;
     display: block;
     cursor: pointer;
 
     color: transparent;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     outline: none;
     background: none;
     z-index: 3;
     opacity: 1;
 
-    background-color: #0C2758;
+    background-color: none;
 
     background-image: url(../images/arrow-next.svg);
     background-repeat: no-repeat;
-    background-position: 25px 50%;
+    background-position: 14px 50%;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -289,7 +289,7 @@
   top: 50%;
   left: 50%;
   text-align: center;
-  transform: rotate(-90deg) translateX(-128px)  translateY(-10px);
+  transform: rotate(-90deg) translateX(-105px)  translateY(-10px);
 }
 
 .slider__dots-advantage li {
@@ -396,7 +396,11 @@
 
 
 
-
+@media (max-width: 768px) {
+  .slider__dots {
+    transform: rotate(-90deg) translateX(-110px) translateY(-10px);
+}
+}
 
 
 
@@ -422,7 +426,7 @@
   top: 50%;
   left: 50%;
   text-align: center;
-  transform: rotate(-90deg) translateX(-141px)  translateY(-10px);
+  transform: rotate(-90deg) translateX(-125px)  translateY(-10px);
 }
 
 
@@ -455,7 +459,7 @@
 
      .slider__dots {
     left: 50%;
-    transform: rotate(-90deg) translateX(-75px)  translateY(-10px);
+    transform: rotate(-90deg) translateX(-82px)  translateY(-10px);
    }
 
    .slider__dots-advantage {
@@ -464,7 +468,7 @@
   top: 50%;
   left: 50%;
   text-align: center;
-  transform: rotate(-90deg) translateX(-185px)  translateY(-10px);
+  transform: rotate(-90deg) translateX(-155px)  translateY(-10px);
 }
 
 
@@ -496,12 +500,12 @@
 
      .prev {
         bottom: 10px;
-        right: 90px;
+        right: 70px;
     }
 
          .slider__dots {
     left: 50%;
-    transform: rotate(-90deg) translateX(-72px)  translateY(-10px);
+    transform: rotate(-90deg) translateX(-82px)  translateY(-10px);
    }
 }
 
@@ -511,11 +515,11 @@
         .slick-dots {
     top: 63%;
     left: 0;
-    transform: rotate(-90deg) translateX(-45px) translateY(78px);
+    transform: rotate(-90deg) translateX(-70px) translateY(78px);
    }
      .slider__dots {
     left: 50%;
-    transform: rotate(-90deg) translateX(-53px) translateY(-10px);
+    transform: rotate(-90deg) translateX(-60px) translateY(-10px);
    }
 
    .slider__dots-advantage {
@@ -524,7 +528,7 @@
   top: 50%;
   left: 50%;
   text-align: center;
-  transform: rotate(-90deg) translateX(-223px)  translateY(-10px);
+  transform: rotate(-90deg) translateX(-190px)  translateY(-10px);
 }
 
 

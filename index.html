@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="css/nice-select.css">
+
      <!-- Стили слайдера SLICK -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -18,6 +21,10 @@
 
     <!-- Стили Beefup Accordion -->
     <link rel="stylesheet" href="css/jquery.beefup.css">
+
+    <!-- Стили Owl-carousel -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.css">
 
     <!-- [if lt IE 9]> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script><![endif]-->
 </head>
@@ -51,8 +58,12 @@
                     </ul>
                 </nav>
                 <div class="block__language-call">
-                	<p class="language__item line"><a href="#" class="language__item-link">РУС</a></p>
-                	<p class="language__item"><a href="#" class="language__item-link">УКР</a></p>
+                    <form class="language__select">
+		            	<select class="select">
+		            		<option  value="1">RU</option>
+		            		<option value="2">UK</option>
+		            	</select>
+            	    </form>
                 	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
             </div>
@@ -64,10 +75,14 @@
             <div id="mobile__nav" class="mobile__nav">
                 <div class="container">
 	                <div class="block__language-call">
-	                	<p class="language__item line"><a href="#" class="language__item-link">РУС</a></p>
-	                	<p class="language__item"><a href="#" class="language__item-link">УКР</a></p>
+	                    <form class="language__select">
+			            	<select class="select">
+			            		<option  value="1">RU</option>
+			            		<option value="2">UK</option>
+			            	</select>
+	            	    </form>
 	                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
-	                </div>
+                    </div>
 	                <nav class="menu" id="menu">
 	                    <ul class="menu__list">
 	                        <li class="menu__list-item">
@@ -164,7 +179,7 @@
 					<img class="about__foto" src="images/about-foto.jpg" alt="">
 				</div>
 				<div class="about__top-text">
-					<h2 class="main__paragraph"><span class="br">Retail Soft</span> Consulting</h2>
+					<h2 class="main__paragraph"><span class="br">Компания Retail</span> Soft Consulting</h2>
 					<p class="main__text">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
 					<p class="main__text">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.....</p>
 					<p class="more"><a href="#about__popup" class="main__more open_modal">Подробнее</a></p>
@@ -204,7 +219,7 @@
 					</div>
 					<div class="section">
 						<img src="images/eqipment.svg" alt="" class="services__section-img">
-						<h3 class="services__section-paragraph">Оборудование и задачи</h3>
+						<h3 class="services__section-paragraph">Оборудование</h3>
 						<p class="services__section-text">Мы предложим все необходимое оборудование (POS-терминалы, термопринтеры...</p>
 						<a href="#services__popup2" class="services__section-more open_modal">Подробнее</a>
 					</div>
@@ -222,14 +237,14 @@
 					</div>
 					<div class="section">
 						<img src="images/noun-service.svg" alt="" class="services__section-img">
-						<h3 class="services__section-paragraph">Дополнительные услуги</h3>
+						<h3 class="services__section-paragraph">Доп. услуги</h3>
 						<p class="services__section-text">Постоянные обновления версий iiko,  аренда и подмены оборудования  постоянный мониторинг... 
                         </p>
 						<a href="#services__popup5" class="services__section-more open_modal">Подробнее</a>
 					</div>
 					<div class="section">
 						<img src="images/technical.svg" alt="" class="services__section-img">
-						<h3 class="services__section-paragraph">Техническая поддержка</h3>
+						<h3 class="services__section-paragraph">Тех. поддержка</h3>
 						<p class="services__section-text">Штат службы поддержки готов ответить на ваши вопросы 24/7, решить вопрос удаленно...</p>
 						<a href="#services__popup6" class="services__section-more open_modal">Подробнее</a>
 					</div>
@@ -335,28 +350,58 @@
 				<p class="main__text-white">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении.</p>
 				<div class="advantage__text">
 					<div class="advantage__text-section">
-						<h3 class="advantage__paragraph">01. Технологии искусственного интеллекта</h3>
-						<p class="product__description">Для решения ваших ежедневных задач и планирования бизнеса в iiko используется искусственный интеллект...</p>
+						<div class="block-numbers">
+							<p class="numbers-item">1</p>
+						</div>
+                        <div class="advantage__item">
+							<h3 class="advantage__paragraph">Технологии искусственного интеллекта</h3>
+							<p class="product__description">Для решения ваших ежедневных задач и планирования бизнеса в iiko используется искусственный интеллект...</p>
+                        </div>
 					</div>
 					<div class="advantage__text-section">
-						<h3 class="advantage__paragraph">02. Все инструменты управления рестораном «из коробки»</h3>
-						<p class="product__description">iiko – единая система для управления продажами, складом, кухней, доставкой, персоналом, финансами, поставщиками...</p>
+						<div class="block-numbers">
+							<p class="numbers-item">2</p>
+						</div>
+						<div class="advantage__item">
+							<h3 class="advantage__paragraph">Все инструменты управления рестораном «из коробки»</h3>
+							<p class="product__description">iiko – единая система для управления продажами, складом, кухней, доставкой, персоналом, финансами, поставщиками...</p>
+						</div>	
 					</div>
 					<div class="advantage__text-section">
-						<h3 class="advantage__paragraph">03. Информация о бизнесе в режиме онлайн</h3>
-						<p class="product__description">Поскольку все данные обрабатываются в единой системе, информация о выручке, себестоимости...</p>
+						<div class="block-numbers">
+							<p class="numbers-item">3</p>
+						</div>
+						<div class="advantage__item">
+							<h3 class="advantage__paragraph">Информация о бизнесе в режиме онлайн</h3>
+							<p class="product__description">Поскольку все данные обрабатываются в единой системе, информация о выручке, себестоимости...</p>
+						</div>	
 					</div>
 					<div class="advantage__text-section">
-						<h3 class="advantage__paragraph">04. Управление ресторанными сетями</h3>
-						<p class="product__description">С помощью iiko вы можете управлять политикой,персоналом, закупками, производством и маркетингом...</p>
+						<div class="block-numbers">
+							<p class="numbers-item">4</p>
+						</div>
+						<div class="advantage__item">
+							<h3 class="advantage__paragraph">Управление ресторанными сетями</h3>
+							<p class="product__description">С помощью iiko вы можете управлять политикой,персоналом, закупками, производством и маркетингом...</p>
+						</div>	
 					</div>
 					<div class="advantage__text-section">
-						<h3 class="advantage__paragraph">05. Возможность интеграции с сайтом и приложениями</h3>
-						<p class="product__description">Благодаря iikoAPI вы можете легко подключить к системе дополнительные модули, в том числе и те....</p>
+						<div class="block-numbers">
+							<p class="numbers-item">5</p>
+						</div>
+						<div class="advantage__item">
+							<h3 class="advantage__paragraph">Возможность интеграции с сайтом и приложениями</h3>
+							<p class="product__description">Благодаря iikoAPI вы можете легко подключить к системе дополнительные модули, в том числе и те....</p>
+						</div>	
 					</div>
 					<div class="advantage__text-section">
-						<h3 class="advantage__paragraph">06. Установка в облако, так и локально</h3>
-						<p class="product__description">Вы можете выбрать для себя удобный формат использования системы и решить, будете ли вы инвестировать...</p>
+						<div class="block-numbers">
+							<p class="numbers-item">6</p>
+						</div>
+						<div class="advantage__item">
+							<h3 class="advantage__paragraph">Установка в облако, так и локально</h3>
+							<p class="product__description">Вы можете выбрать для себя удобный формат использования системы и решить, будете ли вы инвестировать...</p>
+						</div>	
 					</div>
 				</div>
 				<!-- Advantage text Mobile -->
@@ -365,36 +410,66 @@
 						<div class="advantage__sections">
 	                        <div class="advantage__section-mobile">
 								<div class="section__mobile-top">
-									<h3 class="advantage__paragraph">01. Технологии искусственного интеллекта</h3>
-						            <p class="product__description">Для решения ваших ежедневных задач и планирования бизнеса в iiko используется искусственный интеллект...</p>
+									<div class="block-numbers">
+										<p class="numbers-item">1</p>
+									</div>
+			                        <div class="advantage__item">
+										<h3 class="advantage__paragraph">Технологии искусственного интеллекта</h3>
+										<p class="product__description">Для решения ваших ежедневных задач и планирования бизнеса в iiko используется искусственный интеллект...</p>
+			                        </div>
 								</div>
 								<div class="section__mobile-bottom">
-									<h3 class="advantage__paragraph">02. Все инструменты управления рестораном «из коробки»</h3>
-						            <p class="product__description">iiko – единая система для управления продажами, складом, кухней, доставкой, персоналом, финансами, поставщиками...</p>
+									<div class="block-numbers">
+										<p class="numbers-item">2</p>
+									</div>
+									<div class="advantage__item">
+										<h3 class="advantage__paragraph">Все инструменты управления рестораном «из коробки»</h3>
+										<p class="product__description">iiko – единая система для управления продажами, складом, кухней, доставкой, персоналом, финансами, поставщиками...</p>
+									</div>	
 								</div>
 	                        </div>
 						</div>
 						<div class="advantage__sections">
 	                        <div class="advantage__section-mobile">
 								<div class="section__mobile-top">
-									<h3 class="advantage__paragraph">03. Информация о бизнесе в режиме онлайн</h3>
-						            <p class="product__description">Поскольку все данные обрабатываются в единой системе, информация о выручке, себестоимости...</p>
+									<div class="block-numbers">
+										<p class="numbers-item">3</p>
+									</div>
+									<div class="advantage__item">
+										<h3 class="advantage__paragraph">Информация о бизнесе в режиме онлайн</h3>
+										<p class="product__description">Поскольку все данные обрабатываются в единой системе, информация о выручке, себестоимости...</p>
+									</div>
 								</div>
 								<div class="section__mobile-bottom">
-									<h3 class="advantage__paragraph">04. Управление ресторанными сетями</h3>
-						            <p class="product__description">С помощью iiko вы можете управлять политикой,персоналом, закупками, производством и маркетингом...</p>
+									<div class="block-numbers">
+										<p class="numbers-item">4</p>
+									</div>
+									<div class="advantage__item">
+										<h3 class="advantage__paragraph">Управление ресторанными сетями</h3>
+										<p class="product__description">С помощью iiko вы можете управлять политикой,персоналом, закупками, производством и маркетингом...</p>
+									</div>	
 								</div>
 	                        </div>
 						</div>
 						<div class="advantage__sections">
 	                        <div class="advantage__section-mobile">
 								<div class="section__mobile-top">
-									<h3 class="advantage__paragraph">05. Возможность интеграции с сайтом и приложениями</h3>
-						            <p class="product__description">Благодаря iikoAPI вы можете легко подключить к системе дополнительные модули, в том числе и те....</p>
+									<div class="block-numbers">
+										<p class="numbers-item">5</p>
+									</div>
+									<div class="advantage__item">
+										<h3 class="advantage__paragraph">Возможность интеграции с сайтом и приложениями</h3>
+										<p class="product__description">Благодаря iikoAPI вы можете легко подключить к системе дополнительные модули, в том числе и те....</p>
+									</div>
 								</div>
 								<div class="section__mobile-bottom">
-									<h3 class="advantage__paragraph">06. Установка в облако, так и локально</h3>
-						            <p class="product__description">Вы можете выбрать для себя удобный формат использования системы и решить, будете ли вы инвестировать...</p>
+									<div class="block-numbers">
+										<p class="numbers-item">6</p>
+									</div>
+									<div class="advantage__item">
+										<h3 class="advantage__paragraph">Установка в облако, так и локально</h3>
+										<p class="product__description">Вы можете выбрать для себя удобный формат использования системы и решить, будете ли вы инвестировать...</p>
+									</div>
 								</div>
 	                        </div>
 						</div>
@@ -447,51 +522,60 @@
 				            			<li class="prices__spisok-item">Базовая фукциональность</li>
 				            		</ul>
 				            		<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
-				            	</div> 
+				            	</div>
 				            </div>
 
 				            <!-- Prices carousel mobile -->
                             <div class="block__prices-mobile">
-	                            <div class="prices__carousel-mobile">
-					            	<div class="prices__carousel-slides">
-                                        <div class="carousel__slide-block">
-						            		<p class="name__prices">Стандарт</p>
-						            		<p class="unit__price">от 1029₴</p>
-						            		<ul class="prices__spisok">
-						            			<li class="prices__spisok-item">Тариф iikolite</li>
-						            			<li class="prices__spisok-item">Облачное решение </li>
-						            			<li class="prices__spisok-item">Только 1 касса</li>
-						            		</ul>
-						            		<a href="#modal__prices" class="button__application open_modal">Оставить заявку</a>
-                                        </div>
-					            	</div>
-					            	<div class="prices__carousel-slides">
-					            		<div class="carousel__slide-block">
-						            		<p class="name__prices">Голд</p>
-						            		<p class="unit__price">от 2062₴</p>
-						            		<ul class="prices__spisok">
-						            			<li class="prices__spisok-item">Тариф iikolite</li>
-						            			<li class="prices__spisok-item">Облачное решение </li>
-						            			<li class="prices__spisok-item">Только 1 касса</li>
-						            			<li class="prices__spisok-item">Базовая фукциональность</li>
-						            		</ul>
-						            		<a href="#modal__prices" class="button__application button-center open_modal">Оставить заявку</a>
-						            	</div>	
-					            	</div>
-					            	<div class="prices__carousel-slides">
-					            		<div class="carousel__slide-block">
-						            		<p class="name__prices">Премиум</p>
-						            		<p class="unit__price">от 22129₴</p>
-						            		<ul class="prices__spisok">
-						            			<li class="prices__spisok-item">Тариф iikolite</li>
-						            			<li class="prices__spisok-item">Облачное решение </li>
-						            			<li class="prices__spisok-item">Только 1 касса</li>
-						            			<li class="prices__spisok-item">Базовая фукциональность</li>
-						            		</ul>
-						            		<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
-						            	</div>	
-					            	</div>
-					            </div>
+
+                            	<div class="owl-price owl-carousel">
+                            		<div class="owl-price__item">
+                            			<div class="prices__carousel-slide">
+                            				<p class="name__prices">Премиум</p>
+                            				<p class="unit__price">от 22129₴</p>
+                            				<ul class="prices__spisok">
+                            					<li class="prices__spisok-item">Тариф iikolite</li>
+                            					<li class="prices__spisok-item">Облачное решение </li>
+                            					<li class="prices__spisok-item">Только 1 касса</li>
+                            					<li class="prices__spisok-item">Базовая фукциональность</li>
+                            				</ul>
+                            				<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
+                            			</div>
+                            		</div>
+                            		<!-- /.owl-price__item -->
+
+                            		<div class="owl-price__item">
+                            			<div class="prices__carousel-slide">
+                            				<p class="name__prices">Голд</p>
+                            				<p class="unit__price">от 2062₴</p>
+                            				<ul class="prices__spisok">
+                            					<li class="prices__spisok-item">Тариф iikolite</li>
+                            					<li class="prices__spisok-item">Облачное решение </li>
+                            					<li class="prices__spisok-item">Только 1 касса</li>
+                            					<li class="prices__spisok-item">Базовая фукциональность</li>
+                            				</ul>
+                            				<a href="#modal__prices" class="button__application button-center open_modal">Оставить заявку</a>
+                            			</div>
+                            		</div>
+                            		<!-- /.owl-price__item -->
+
+                            		<div class="owl-price__item">
+                            			<div class="prices__carousel-slide">
+                            				<p class="name__prices">Премиум</p>
+                            				<p class="unit__price">от 22129₴</p>
+                            				<ul class="prices__spisok">
+                            					<li class="prices__spisok-item">Тариф iikolite</li>
+                            					<li class="prices__spisok-item">Облачное решение </li>
+                            					<li class="prices__spisok-item">Только 1 касса</li>
+                            					<li class="prices__spisok-item">Базовая фукциональность</li>
+                            				</ul>
+                            				<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
+                            			</div>
+                            		</div>
+                            		<!-- /.owl-price__item -->
+                            	</div>
+                            	<!-- /.owl-price -->
+	                            
                             </div>
 				        </div>
 				        <div class="tab_item tab-item-2">
@@ -531,46 +615,52 @@
 				            </div>
                               <!-- Prices carousel mobile -->
                             <div class="block__prices-mobile">
-	                            <div class="prices__carousel-mobile">
-					            	<div class="prices__carousel-slides">
-                                        <div class="carousel__slide-block">
-						            		<p class="name__prices">Стандарт</p>
-						            		<p class="unit__price">от 1029₴</p>
-						            		<ul class="prices__spisok">
-						            			<li class="prices__spisok-item">Тариф iikolite</li>
-						            			<li class="prices__spisok-item">Облачное решение </li>
-						            			<li class="prices__spisok-item">Только 1 касса</li>
-						            		</ul>
-						            		<a href="#modal__prices" class="button__application open_modal">Оставить заявку</a>
-                                        </div>
-					            	</div>
-					            	<div class="prices__carousel-slides">
-					            		<div class="carousel__slide-block">
-						            		<p class="name__prices">Голд</p>
-						            		<p class="unit__price">от 2062₴</p>
-						            		<ul class="prices__spisok">
-						            			<li class="prices__spisok-item">Тариф iikolite</li>
-						            			<li class="prices__spisok-item">Облачное решение </li>
-						            			<li class="prices__spisok-item">Только 1 касса</li>
-						            			<li class="prices__spisok-item">Базовая фукциональность</li>
-						            		</ul>
-						            		<a href="#modal__prices" class="button__application button-center open_modal">Оставить заявку</a>
-						            	</div>	
-					            	</div>
-					            	<div class="prices__carousel-slides">
-					            		<div class="carousel__slide-block">
-						            		<p class="name__prices">Премиум</p>
-						            		<p class="unit__price">от 22129₴</p>
-						            		<ul class="prices__spisok">
-						            			<li class="prices__spisok-item">Тариф iikolite</li>
-						            			<li class="prices__spisok-item">Облачное решение </li>
-						            			<li class="prices__spisok-item">Только 1 касса</li>
-						            			<li class="prices__spisok-item">Базовая фукциональность</li>
-						            		</ul>
-						            		<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
-						            	</div>	
-					            	</div>
-					            </div>
+	                            <div class="owl-price owl-carousel">
+	                            	<div class="owl-price__item">
+	                            		<div class="prices__carousel-slide">
+	                            			<p class="name__prices">Стандарт</p>
+	                            			<p class="unit__price">от 1029₴</p>
+	                            			<ul class="prices__spisok">
+	                            				<li class="prices__spisok-item">Тариф iikolite</li>
+	                            				<li class="prices__spisok-item">Облачное решение </li>
+	                            				<li class="prices__spisok-item">Только 1 касса</li>
+	                            			</ul>
+	                            			<a href="#modal__prices" class="button__application open_modal">Оставить заявку</a>
+	                            		</div>
+	                            	</div>
+	                            	<!-- /.owl-price__item -->
+
+	                            	<div class="owl-price__item">
+	                            		<div class="prices__carousel-slide">
+	                            			<p class="name__prices">Голд</p>
+	                            			<p class="unit__price">от 2062₴</p>
+	                            			<ul class="prices__spisok">
+	                            				<li class="prices__spisok-item">Тариф iikolite</li>
+	                            				<li class="prices__spisok-item">Облачное решение </li>
+	                            				<li class="prices__spisok-item">Только 1 касса</li>
+	                            				<li class="prices__spisok-item">Базовая фукциональность</li>
+	                            			</ul>
+	                            			<a href="#modal__prices" class="button__application button-center open_modal">Оставить заявку</a>
+	                            		</div>
+	                            	</div>
+	                            	<!-- /.owl-price__item -->
+	                            	
+	                            	<div class="owl-price__item">
+	                            		<div class="prices__carousel-slide">
+	                            			<p class="name__prices">Премиум</p>
+	                            			<p class="unit__price">от 22129₴</p>
+	                            			<ul class="prices__spisok">
+	                            				<li class="prices__spisok-item">Тариф iikolite</li>
+	                            				<li class="prices__spisok-item">Облачное решение </li>
+	                            				<li class="prices__spisok-item">Только 1 касса</li>
+	                            				<li class="prices__spisok-item">Базовая фукциональность</li>
+	                            			</ul>
+	                            			<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
+	                            		</div>
+	                            	</div>
+	                            	<!-- /.owl-price__item -->
+	                            </div>
+	                            <!-- /.owl-price -->
                             </div>
 				        </div>
 				    </div>
@@ -578,10 +668,13 @@
 			</div>
 		</div>
 	</div>
+
+
+
 	<div class="questions" id="questions">
 		<div class="container">
 			<div class="questions__block">
-				<h2 class="main__paragraph-white">Преимущества iiko</h2>
+				<h2 class="main__paragraph-white">Вопросы</h2>
 				<p class="main__text-white">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении.</p>
 				<div class="questions__accordion">
 					<div class="questions__accordion-left">
@@ -835,10 +928,6 @@
 								</div>
 						    </div>	
 	                    </div>
-				</div>
-				<div class="footer__block-seti">
-					<a class="footer__facebook-link" href="#"><img src="images/footer__facebook.svg" alt="" class="footer__facebook"></a>
-					<a class="top" href="#"><img src="images/arrow-top.svg" alt="" class="arrow__top"></a>
 				</div>
 		    </div>
 		</div>
@@ -1115,7 +1204,8 @@
 <script src="js/jquery.spincrement.js"></script>
 <script src="js/headhesive.min.js"></script>
 <script src="js/jquery.beefup.min.js"></script>
-
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
