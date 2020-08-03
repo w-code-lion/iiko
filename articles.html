@@ -1,301 +1,358 @@
-<!doctype html>
-<html lang=ru>
+<!DOCTYPE HTML>
+<html lang="ru">
 <head>
-<meta charset=UTF-8>
-<meta http-equiv=X-UA-Compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1">
-<title>Наши статьи</title>
-<link rel=stylesheet href=css/style.min.css>
-<link rel=stylesheet href=css/nice-select.css>
-<link rel=stylesheet href=slick/slick.css>
-<link rel=stylesheet href=slick/slick-theme.css>
-<link rel=stylesheet href=css/popup.min.css>
-<link rel=stylesheet href=css/jquery.beefup.css>
-<!-- [if lt IE 9]> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script><![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Наши статьи</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- Nice Select -->
+    <link rel="stylesheet" href="css/nice-select.css">
+
+     <!-- Стили слайдера SLICK -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <!-- Стили Po-Pup -->
+    <link rel="stylesheet" href="css/popup.css">
+
+    <!-- Стили Beefup Accordion -->
+    <link rel="stylesheet" href="css/jquery.beefup.css">
+
+    <!-- [if lt IE 9]> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-<header class=header__articles>
-<div class="header__panel articles__panel">
-<div class=header__top>
-<a href=index.html class=header__top-logo><img src=images/logo.svg alt=""></a>
-<div class=header__top-block>
-<nav class=menu id=menu>
-<ul class=menu__list>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#about>О нас</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#our__services>Услуги</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#about__company>iiko</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#prices>Цены</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#questions>Вопросы</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#articles>Статьи</a>
-</li>
-</ul>
-</nav>
-<div class=block__language-call>
-<form class=language__select>
-<select class=select>
-<option value=1>RU</option>
-<option value=2>UK</option>
-</select>
-</form>
-<a href=#callback class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
-</div>
-</div>
-<div id=menu__togle class=menu__icon>
-<div class=menu__icon-line></div>
-</div>
-<div id=mobile__nav class=mobile__nav>
-<div class=container>
-<div class=block__language-call>
-<form class=language__select>
-<select class=select>
-<option value=1>RU</option>
-<option value=2>UK</option>
-</select>
-</form>
-<a href=#callback class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
-</div>
-<nav class=menu id=menu>
-<ul class=menu__list>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#about>О нас</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#our__services>Услуги</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#about__company>iiko</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#prices>Цены</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#questions>Вопросы</a>
-</li>
-<li class=menu__list-item>
-<a class=menu__link href=index.html#articles>Статьи</a>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
-</div>
-<div class=header__article-bottom>
-<a href=index.html class=article__bottom-link>Главная</a>
-<p class=article__bottom-item>Наши статьи</p>
-</div>
+<header class="header__articles">
+    <div class="header__panel articles__panel">
+    	<div class="header__top">
+			<a href="index.html" class="header__top-logo"><img src="images/logo.svg" alt=""></a>
+            <div class="header__top-block">
+            	<nav class="menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="index.html#about">О нас</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="index.html#our__services">Услуги</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="index.html#about__company">iiko</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="index.html#prices">Цены</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="index.html#questions">Вопросы</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="index.html#articles">Статьи</a>
+                        </li>
+                    </ul>
+                </nav>
+                 <div class="block__language-call">
+                    <form class="language__select">
+		            	<select class="select">
+		            		<option  value="1">RU</option>
+		            		<option value="2">UK</option>
+		            	</select>
+            	    </form>
+                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+                </div>
+            </div>
+                <!-- Кнопка для мобтльной навигации -->
+	        <div id="menu__togle" class="menu__icon">
+	            <div class="menu__icon-line"></div>
+	        </div>
+               <!-- Мобильная навигация -->
+            <div id="mobile__nav" class="mobile__nav">
+                <div class="container">
+	                <div class="block__language-call">
+	                    <form class="language__select">
+			            	<select class="select">
+			            		<option  value="1">RU</option>
+			            		<option value="2">UK</option>
+			            	</select>
+	            	    </form>
+	                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+	                </div>
+	                <nav class="menu" id="menu">
+	                    <ul class="menu__list">
+	                        <li class="menu__list-item">
+	                            <a class="menu__link" href="index.html#about">О нас</a>
+	                        </li>
+	                        <li class="menu__list-item">
+	                            <a class="menu__link" href="index.html#our__services">Услуги</a>
+	                        </li>
+	                        <li class="menu__list-item">
+	                            <a class="menu__link" href="index.html#about__company">iiko</a>
+	                        </li>
+	                        <li class="menu__list-item">
+	                            <a class="menu__link" href="index.html#prices">Цены</a>
+	                        </li>
+	                        <li class="menu__list-item">
+	                            <a class="menu__link" href="index.html#questions">Вопросы</a>
+	                        </li>
+	                        <li class="menu__list-item">
+	                            <a class="menu__link" href="index.html#articles">Статьи</a>
+	                        </li>
+	                    </ul>
+	                </nav>
+                </div>
+            </div>
+        </div>   
+	</div>
+	<div class="header__article-bottom">
+		<a href="index.html" class="article__bottom-link">Главная</a>
+		<p class="article__bottom-item">Наши статьи</p>
+	</div>
 </header>
-<div class=main__article id=articles>
-<div class=container>
-<div class=articles__block>
-<div class="articles__block-products page__article-product">
-<section class="articles__section-two page-aricle">
-<div class=picture>
-<img src=images/article-1.jpg alt="" class=section__foto>
+<div class="main__article" id="articles">
+	<div class="container">
+		<div class="articles__block">
+			    <div class="articles__block-products page__article-product">
+				    <section class="articles__section-two page-aricle">
+                        <div class="picture">
+				   	        <img src="images/article-1.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Тотальная автоматизация</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
+				    </section>
+				    <section class="articles__section-two page-aricle">
+				   	    <div class="picture">
+				   	        <img src="images/article-2.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Удобство интерфейса</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
+				    </section>
+				    <section class="articles__section-two page-aricle">
+				   	    <div class="picture">
+				   	        <img src="images/article-3.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Управление персоналом</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
+				    </section>
+	                 <section class="articles__section-two page-aricle">
+				   	    <div class="picture">
+				   	        <img src="images/article-1.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Управление персоналом</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
+				    </section>
+	                 <section class="articles__section-two page-aricle">
+				   	    <div class="picture">
+				   	        <img src="images/article-2.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Управление персоналом</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
+				    </section>
+	                 <section class="articles__section-two page-aricle">
+				   	    <div class="picture">
+				   	        <img src="images/article-3.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Управление персоналом</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
+				    </section>
+	                 <section class="articles__section-two page-aricle">
+				   	    <div class="picture">
+				   	        <img src="images/article-1.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Управление персоналом</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
+				    </section>
+	                 <section class="articles__section-two page-aricle">
+				   	    <div class="picture">
+				   	        <img src="images/article-2.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Управление персоналом</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
+				    </section>
+	                 <section class="articles__section-two page-aricle">
+				   	    <div class="picture">
+				   	        <img src="images/article-3.jpg" alt="" class="section__foto">
+                        </div>
+				   	    <p class="section__paragraph">Управление персоналом</p>
+				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
+				    </section>
+			    </div>
+			    <div class="pagination">
+			    	<ul class="spisok__pagination">
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">1</a></li>
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">2</a></li>
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">3</a></li>
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">4</a></li>
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">5</a></li>
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">6</a></li>
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">7</a></li>
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">8</a></li>
+			    		<li class="pagination__item"><a href="#" class="pagination__item-link">9</a></li>
+			    	</ul>
+			    </div>
+		</div>
+	</div>
 </div>
-<p class=section__paragraph>Тотальная автоматизация</p>
-<p class=section__text>С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-<a href=name-article.html class=section__more>Подробнее</a>
-</section>
-<section class="articles__section-two page-aricle">
-<div class=picture>
-<img src=images/article-2.jpg alt="" class=section__foto>
-</div>
-<p class=section__paragraph>Удобство интерфейса</p>
-<p class=section__text>С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-<a href=name-article.html class=section__more>Подробнее</a>
-</section>
-<section class="articles__section-two page-aricle">
-<div class=picture>
-<img src=images/article-3.jpg alt="" class=section__foto>
-</div>
-<p class=section__paragraph>Управление персоналом</p>
-<p class=section__text>С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-<a href=name-article.html class=section__more>Подробнее</a>
-</section>
-<section class="articles__section-two page-aricle">
-<div class=picture>
-<img src=images/article-1.jpg alt="" class=section__foto>
-</div>
-<p class=section__paragraph>Управление персоналом</p>
-<p class=section__text>С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-<a href=name-article.html class=section__more>Подробнее</a>
-</section>
-<section class="articles__section-two page-aricle">
-<div class=picture>
-<img src=images/article-2.jpg alt="" class=section__foto>
-</div>
-<p class=section__paragraph>Управление персоналом</p>
-<p class=section__text>С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-<a href=name-article.html class=section__more>Подробнее</a>
-</section>
-<section class="articles__section-two page-aricle">
-<div class=picture>
-<img src=images/article-3.jpg alt="" class=section__foto>
-</div>
-<p class=section__paragraph>Управление персоналом</p>
-<p class=section__text>С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-<a href=name-article.html class=section__more>Подробнее</a>
-</section>
-<section class="articles__section-two page-aricle">
-<div class=picture>
-<img src=images/article-1.jpg alt="" class=section__foto>
-</div>
-<p class=section__paragraph>Управление персоналом</p>
-<p class=section__text>С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-<a href=name-article.html class=section__more>Подробнее</a>
-</section>
-<section class="articles__section-two page-aricle">
-<div class=picture>
-<img src=images/article-2.jpg alt="" class=section__foto>
-</div>
-<p class=section__paragraph>Управление персоналом</p>
-<p class=section__text>С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-<a href=name-article.html class=section__more>Подробнее</a>
-</section>
-<section class="articles__section-two page-aricle">
-<div class=picture>
-<img src=images/article-3.jpg alt="" class=section__foto>
-</div>
-<p class=section__paragraph>Управление персоналом</p>
-<p class=section__text>С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-<a href=name-article.html class=section__more>Подробнее</a>
-</section>
-</div>
-<div class=pagination>
-<ul class=spisok__pagination>
-<li class=pagination__item><a href=# class=pagination__item-link>1</a></li>
-<li class=pagination__item><a href=# class=pagination__item-link>2</a></li>
-<li class=pagination__item><a href=# class=pagination__item-link>3</a></li>
-<li class=pagination__item><a href=# class=pagination__item-link>4</a></li>
-<li class=pagination__item><a href=# class=pagination__item-link>5</a></li>
-<li class=pagination__item><a href=# class=pagination__item-link>6</a></li>
-<li class=pagination__item><a href=# class=pagination__item-link>7</a></li>
-<li class=pagination__item><a href=# class=pagination__item-link>8</a></li>
-<li class=pagination__item><a href=# class=pagination__item-link>9</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<footer class=footer>
-<div class=container>
-<div class=footer__block>
-<div class=footer__block-left>
-<h3 class=footer__paragraph>Контакты:</h3>
-<ul class=footer__contact>
-<li class=footer__contact-item>Харьков, ул. Гвардейцев-Широнинцев, 33,</li>
-<li class=footer__contact-item><a class="footer__tel tel__one" href="tel:+38 (099) 337-13-91">+38 (099) 337-13-91</a>Евгений</li>
-<li class=footer__contact-item><a class=footer__tel href="tel:+38 (099) 635-83-42"> +38 (099) 635-83-42</a>Наталья</li>
-<li class=footer__contact-item><a href=# class=email__link>retail.soft.consulting@gmail.com</a></li>
-</ul>
-<div class=block__confidentiality>
-<a href=# class=confidentiality__link>Конфиденциальность</a>
-<a href=# class=confidentiality__link>Наши статьи</a>
-</div>
-</div>
-<div class=footer__block-right>
-<h3 class=footer__paragraph>Наши партнеры:</h3>
-<div class=block__partners>
-<div class=block__partners-left>
-<div class="block__partners-foto code">
-<img class=partners__logo src=images/footer__codepen.png>
-</div>
-<div class="block__partners-foto code">
-<img class=partners__logo src=images/footer__codepen.png>
-</div>
-<div class="block__partners-foto code">
-<img class=partners__logo src=images/footer__codepen.png>
-</div>
-</div>
-<div class=block__partners-right>
-<div class="block__partners-foto drib">
-<img class=partners__logo src=images/footer__dribble.png>
-</div>
-<div class="block__partners-foto drib">
-<img class=partners__logo src=images/footer__dribble.png>
-</div>
-<div class="block__partners-foto drib">
-<img class=partners__logo src=images/footer__dribble.png>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=copyright__block>
-<p class=copyright__text>&copy; 2020 Retail soft consulting</p>
-<a href=diex.me class=diex__link>Сайт разработал diex.me</a>
-<a href=#modal-form class="footer__write write open_modal"></a>
-</div>
-</div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__block">
+			<div class="footer__block-left">
+                <div class="footer__left-top">
+					<h3 class="footer__paragraph">Контакты:</h3>
+					<ul class="footer__contact">
+						<li class="footer__contact-item">Харьков,  ул. Рымарская, 25</li>
+						<li class="footer__contact-item">Евгений <a class="footer__tel tel__one" href="tel:+38 (099) 337-13-91">+38 (099) 337-13-91</a></li>
+						<li class="footer__contact-item">Наталья <a class="footer__tel" href="tel:+38 (099) 635-83-42" > +38 (099) 635-83-42</a></li>
+						<li class="footer__contact-item"><a href="#" class="email__link">retail.soft.consulting@gmail.com</a></li>
+						<li class="footer__contact-item"><a href="#" class="email__link">www.facebook.com/retail.soft.consulting</a></li>
+					</ul>
+                </div>
+				<div class="block__confidentiality">
+					<a href="#" class="confidentiality__link">Конфиденциальность</a>
+					<a href="#" class="confidentiality__link">Наши статьи</a>
+				</div>
+			</div>
+			<div class="footer__block-right">
+				<h3 class="footer__paragraph">Наши партнеры:</h3>
+				<div class="block__partners">
+                    <div class="block__partners-left">
+						<div class="block__partners-foto code">
+							<img class="partners__logo" src="images/footer__codepen.png">
+						</div>
+						<div class="block__partners-foto code">
+							<img class="partners__logo" src="images/footer__codepen.png">
+						</div>
+						<div class="block__partners-foto code">
+							<img class="partners__logo" src="images/footer__codepen.png">
+						</div>
+                    </div>
+                    <div class="block__partners-right">
+						<div class="block__partners-foto drib">
+							<img class="partners__logo" src="images/footer__dribble.png">
+						</div>
+						<div class="block__partners-foto drib">
+							<img class="partners__logo" src="images/footer__dribble.png">
+						</div>
+						<div class="block__partners-foto drib">
+							<img class="partners__logo" src="images/footer__dribble.png">
+						</div>
+                    </div>
+				</div> 
+                <!-- Partners mobile -->
+                <div class="footer__partners-mobile">
+	                    <div class="block__partners-mobile">
+		                    <div class="block__partners-center-mobile">
+		                    	<div class="block__partners-foto drib">
+									<img class="partners__logo" src="images/footer__dribble.png">
+								</div>
+						    </div>		
+							<div class="block__partners-center-mobile">
+		                    	<div class="block__partners-foto code">
+									<img class="partners__logo" src="images/footer__codepen.png">
+								</div>
+						    </div>
+						    <div class="block__partners-center-mobile">
+		                    	<div class="block__partners-foto drib">
+									<img class="partners__logo" src="images/footer__dribble.png">
+								</div>
+						    </div>
+						    <div class="block__partners-center-mobile">
+		                    	<div class="block__partners-foto code">
+									<img class="partners__logo" src="images/footer__codepen.png">
+								</div>
+						    </div>
+						    <div class="block__partners-center-mobile">
+		                    	<div class="block__partners-foto drib">
+									<img class="partners__logo" src="images/footer__dribble.png">
+								</div>
+						    </div>
+						    <div class="block__partners-center-mobile">
+		                    	<div class="block__partners-foto code">
+									<img class="partners__logo" src="images/footer__codepen.png">
+								</div>
+						    </div>	
+	                    </div>
+				</div>
+		    </div>
+		</div>
+		<div class="copyright__block">
+			<p class="copyright__text">&copy; 2020  Retail soft consulting</p>
+			<a href="diex.me" class="diex__link">Сайт разработал diex.me</a>
+			<a href="#modal-form" class="footer__write write open_modal"></a>
+		</div>
+	</div>
+	</div>
 </footer>
-<div id=callback class=modal>
-<div class=modal__block>
-<div class=modal__content>
-<div class="modal__in modal__in--width">
-<div class=modal__header>
-<h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
-<span class=modal__close></span>
+
+<!--Modal Window -->
+
+<div id="callback" class="modal">
+    <div class="modal__block">
+        <div class="modal__content">
+            <div class="modal__in modal__in--width">
+                <div class="modal__header">
+                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <span class="modal__close"></span>
+                </div>
+                <div class="modal__body modal__body--border">
+                    <p>Заказать звонок</p>
+                </div>
+            </div>
+            <div class="modal__overlay"></div>
+        </div>
+    </div>
 </div>
-<div class="modal__body modal__body--border">
-<p>Заказать звонок</p>
+<div id="modal-form" class="modal">
+    <div class="modal__block">
+                <div class="modal__content">
+                    <div class="modal__in">
+                        <div class="modal__header modal__header--indent">
+                            <h5 class="modal__title">Онлайн запись</h5>
+                            <span class="modal__close"></span>
+                        </div>
+                        <div class="modal__body">
+                            <form method="post" class="modal__form form" id="form3" novalidate="novalidate">
+                                <div class="form__group">
+                                    <div class="form__input-wrapper form__input-wrapper--border">
+                                        <input type="text" name="userName" placeholder="Имя" class="form__input form__input--border">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <div class="form__input-wrapper form__input-wrapper--border">
+                                        <input type="tel" value="+38" name="userTel" placeholder="Телефон" class="form__input form__input--border">
+                                    </div>
+                                </div>
+                                <div class="form__group text-center">
+                                    <input type="hidden" name="submit">
+                                    <button type="submit" class="btn btn--default btn--md">Записаться</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal__overlay"></div>
+                </div>
+    </div>
 </div>
-</div>
-<div class=modal__overlay></div>
-</div>
-</div>
-</div>
-<div id=modal-form class=modal>
-<div class=modal__block>
-<div class=modal__content>
-<div class=modal__in>
-<div class="modal__header modal__header--indent">
-<h5 class=modal__title>Онлайн запись</h5>
-<span class=modal__close></span>
-</div>
-<div class=modal__body>
-<form method=post class="modal__form form" id=form3 novalidate>
-<div class=form__group>
-<div class="form__input-wrapper form__input-wrapper--border">
-<input name=userName placeholder=Имя class="form__input form__input--border">
-</div>
-</div>
-<div class=form__group>
-<div class="form__input-wrapper form__input-wrapper--border">
-<input type=tel value=+38 name=userTel placeholder=Телефон class="form__input form__input--border">
-</div>
-</div>
-<div class="form__group text-center">
-<input type=hidden name=submit>
-<button type=submit class="btn btn--default btn--md">Записаться</button>
-</div>
-</form>
-</div>
-</div>
-<div class=modal__overlay></div>
-</div>
-</div>
-</div>
-<script src=js/jquery.min.js></script>
-<script src=js/pageScroll.min.js></script>
-<script src=slick/slick.min.js></script>
-<script src=js/jquery.magnific-popup.min.js></script>
-<script src=js/jquery.spincrement.js></script>
-<script src=js/headhesive.min.js></script>
-<script src=js/jquery.beefup.min.js></script>
-<script src=js/owl.carousel.min.js></script>
-<script src=js/jquery.nice-select.min.js></script>
-<script src=js/main.min.js></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.malihu.PageScroll2id.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.spincrement.js"></script>
+<script src="js/headhesive.min.js"></script>
+<script src="js/jquery.beefup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
