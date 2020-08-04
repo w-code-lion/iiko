@@ -11,10 +11,24 @@
 .modal__block {display: table; width: 100%; height: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0;}
 .modal__content {display: table-cell; vertical-align: middle; padding: 15px;}
 .modal__in {max-width: 430px; margin-left: auto; margin-right: auto; background-color: #fff; padding-left: 1.125rem; padding-right: 1.125rem; padding-bottom: 1.1875rem; box-shadow: 0 2px 7px rgba(23, 23, 22, .15); position: relative; z-index: 9999;}
-.modal__in--width {max-width: 730px;}
+.modal__in--width {max-width: 720px;margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+    padding-bottom: 1.1875rem;
+    box-shadow: 0 2px 7px rgba(23, 23, 22, .15);
+    position: relative;
+    z-index: 9999;}
 .modal__header {position: relative; text-align: center; min-height: 4.875rem;}
 .modal__header--indent {margin-left: .875rem; margin-right: .875rem; margin-bottom: 15px;}
 .modal__title {font-size: 1.34625rem; font-family: 'SFProDisplay'; padding: 2.125rem 2.125rem .8125rem .75rem; color: #1F1F1F;}
+.modal__title-form {
+    font-size: 1.34625rem;
+    font-family: 'SFProDisplay';
+    padding: 2.125rem 2.125rem .8125rem .75rem;
+    color: #1F1F1F;
+}
 .modal__close {height: 1.5625rem; width: 1.5625rem; display: block; position: absolute; right: 0; top: 2.375rem; cursor: pointer; border: 1px solid #ebebeb; background: url(../images/close.svg) no-repeat center; -ms-background-size: .5625rem .625rem; background-size: .5625rem .625rem;}
 .modal__body--border {border: 1px solid #ebebeb; padding: .9375rem 1.375rem;}
 .modal__form {padding-left: .875rem; padding-right: .875rem; margin-bottom: -1.3125rem;}

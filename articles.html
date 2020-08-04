@@ -59,7 +59,7 @@
 		            		<option value="2">UK</option>
 		            	</select>
             	    </form>
-                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+                	<a href="#modal-form" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
             </div>
                 <!-- Кнопка для мобтльной навигации -->
@@ -76,7 +76,7 @@
 			            		<option value="2">UK</option>
 			            	</select>
 	            	    </form>
-	                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+	                	<a href="#modal-form" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
 	                </div>
 	                <nav class="menu" id="menu">
 	                    <ul class="menu__list">
@@ -217,8 +217,8 @@
 					</ul>
                 </div>
 				<div class="block__confidentiality">
-					<a href="#" class="confidentiality__link">Конфиденциальность</a>
-					<a href="#" class="confidentiality__link">Наши статьи</a>
+					<a href="#confident-popup" class="confidentiality__link open_modal">Конфиденциальность</a>
+					<a href="articles.html" class="confidentiality__link">Наши статьи</a>
 				</div>
 			</div>
 			<div class="footer__block-right">
@@ -295,28 +295,31 @@
 
 <!--Modal Window -->
 
-<div id="callback" class="modal">
+<div id="confident-popup" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Заказать звонок</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
         </div>
     </div>
 </div>
-<div id="modal-form" class="modal">
+ <div id="modal-form" class="modal">
     <div class="modal__block">
                 <div class="modal__content">
                     <div class="modal__in">
                         <div class="modal__header modal__header--indent">
-                            <h5 class="modal__title">Онлайн запись</h5>
+                            <h5 class="modal__title-form">Заказать звонок</h5>
                             <span class="modal__close"></span>
                         </div>
                         <div class="modal__body">

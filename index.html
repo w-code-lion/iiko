@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Animate AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+
     <!-- Nice Select -->
     <link rel="stylesheet" href="css/nice-select.css">
 
@@ -64,7 +67,7 @@
 		            		<option value="2">UK</option>
 		            	</select>
             	    </form>
-                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+                	<a href="#modal-form" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
             </div>
                 <!-- Кнопка для мобтльной навигации -->
@@ -81,7 +84,7 @@
 			            		<option value="2">UK</option>
 			            	</select>
 	            	    </form>
-	                	<a href="#callback" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+	                	<a href="#modal-form" class="button__call-link open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
                     </div>
 	                <nav class="menu" id="menu">
 	                    <ul class="menu__list">
@@ -174,7 +177,7 @@
 <div class="main">
 	<div class="container">
 		<div class="about" id="about">
-			<div class="about__top">
+			<div class="about__top" data-aos="zoom-in-up">
 				<div class="about__top-foto">
 					<img class="about__foto" src="images/about-foto.jpg" alt="">
 				</div>
@@ -185,7 +188,7 @@
 					<p class="more"><a href="#about__popup" class="main__more open_modal">Подробнее</a></p>
 				</div>
 			</div>
-			<div class="about__bottom">
+			<div class="about__bottom" data-aos="flip-down">
 				<div class="about__bottom-numbers">
 					<p class="numbers__item"><span class="number">412</span>+</p>
 					<p class="numbers__text">реализованных<br> проектов</p>
@@ -208,104 +211,104 @@
 	<div class="our__services" id="our__services">
 		<div class="container">
 			<div class="our__services-block">
-				<h2 class="main__paragraph-white">Наши услуги</h2>
-				<p class="main__text-white">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении.</p>
-				<div class="block__services">
-					<div class="section">
+				<h2 class="main__paragraph-white" data-aos="fade-down">Наши услуги</h2>
+				<p class="main__text-white" data-aos="fade-down">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении.</p>
+				<div class="block__services" data-aos="zoom-in">
+					<a class="section open_modal" href="#services__popup">
 						<img src="images/installation.svg" alt="" class="services__section-img">
 						<h3 class="services__section-paragraph">Установка iiko</h3>
 						<p class="services__section-text">После согласования деталей проекта мы определимся с технической задачей, подбираем...</p>
-						<a href="#services__popup" class="services__section-more open_modal">Подробнее</a>
-					</div>
-					<div class="section">
+						<p class="services__section-more">Подробнее</p>
+					</a>
+					<a class="section open_modal" href="#services__popup2">
 						<img src="images/eqipment.svg" alt="" class="services__section-img">
 						<h3 class="services__section-paragraph">Оборудование</h3>
 						<p class="services__section-text">Мы предложим все необходимое оборудование (POS-терминалы, термопринтеры...</p>
-						<a href="#services__popup2" class="services__section-more open_modal">Подробнее</a>
-					</div>
-					<div class="section">
+						<p class="services__section-more">Подробнее</p>
+					</a>
+					<a class="section open_modal" href="#services__popup3">
 						<img src="images/hostinh.svg" alt="" class="services__section-img">
 						<h3 class="services__section-paragraph">Хостинг сервера</h3>
 						<p class="services__section-text">Мы разместим базу данных на сервере (облачном либо вашем) Серверы нашей компании расположены в...</p>
-						<a href="#services__popup3" class="services__section-more open_modal">Подробнее</a>
-					</div>
-					<div class="section">
+						<p class="services__section-more">Подробнее</p>
+					</a>
+					<a class="section open_modal" href="#services__popup4">
 						<img src="images/training.svg" alt="" class="services__section-img">
 						<h3 class="services__section-paragraph">Обучение и аудит</h3>
 						<p class="services__section-text">Аудит существующей системы учета iiko и обучение сотрудников нашими специалистами...</p>
-						<a href="#services__popup4" class="services__section-more open_modal">Подробнее</a>
-					</div>
-					<div class="section">
+						<p class="services__section-more">Подробнее</p>
+					</a>
+					<a class="section open_modal" href="#services__popup5">
 						<img src="images/noun-service.svg" alt="" class="services__section-img">
 						<h3 class="services__section-paragraph">Доп. услуги</h3>
 						<p class="services__section-text">Постоянные обновления версий iiko,  аренда и подмены оборудования  постоянный мониторинг... 
                         </p>
-						<a href="#services__popup5" class="services__section-more open_modal">Подробнее</a>
-					</div>
-					<div class="section">
+						<p class="services__section-more">Подробнее</p>
+					</a>
+					<a class="section open_modal" href="#services__popup6">
 						<img src="images/technical.svg" alt="" class="services__section-img">
 						<h3 class="services__section-paragraph">Тех. поддержка</h3>
 						<p class="services__section-text">Штат службы поддержки готов ответить на ваши вопросы 24/7, решить вопрос удаленно...</p>
-						<a href="#services__popup6" class="services__section-more open_modal">Подробнее</a>
-					</div>
+						<p class="services__section-more">Подробнее</p>
+					</a>
 				</div>
 				<!-- Block Services Mobile -->
-                <div class="services__mobile">
+                <div class="services__mobile" data-aos="zoom-in">
 					<div class="block__services-mobile">
-						<div class="sections">
+						<a class="sections open_modal" href="#services__popup">
 	                        <div class="section__mobile">
 								<img src="images/installation.svg" alt="" class="services__section-img">
 								<h3 class="services__section-paragraph">Установка iiko</h3>
 								<p class="services__section-text">После согласования деталей проекта мы определимся с технической задачей, подбираем...</p>
-								<a href="#services__popup" class="services__section-more open_modal">Подробнее</a>
+								<p class="services__section-more">Подробнее</p>
 	                        </div>
-						</div>
+						</a>
 						
-						<div class="sections">
+						<a class="sections open_modal" href="#services__popup2">
 	                        <div class="section__mobile">
 								<img src="images/eqipment.svg" alt="" class="services__section-img">
-								<h3 class="services__section-paragraph">Оборудование и задачи</h3>
+								<h3 class="services__section-paragraph">Оборудование</h3>
 								<p class="services__section-text">Мы предложим все необходимое оборудование (POS-терминалы, термопринтеры...</p>
-								<a href="#services__popup2" class="services__section-more open_modal">Подробнее</a>
+								<p class="services__section-more">Подробнее</p>
 	                        </div>
-						</div>
+						</a>
 	                  
-						<div class="sections">
+						<a class="sections open_modal" href="#services__popup3">
 	                        <div class="section__mobile">
 								<img src="images/hostinh.svg" alt="" class="services__section-img">
 								<h3 class="services__section-paragraph">Хостинг сервера</h3>
 								<p class="services__section-text">Мы разместим базу данных на сервере (облачном либо вашем) Серверы нашей компании расположены в...</p>
-								<a href="#services__popup3" class="services__section-more open_modal">Подробнее</a>
+								<p class="services__section-more">Подробнее</p>
 	                        </div>
-						</div>
+						</a>
 
-						<div class="sections">
+						<a class="sections open_modal" href="#services__popup4">
 							<div class="section__mobile">
 								<img src="images/training.svg" alt="" class="services__section-img">
 								<h3 class="services__section-paragraph">Обучение и аудит</h3>
 								<p class="services__section-text">Аудит существующей системы учета iiko и обучение сотрудников нашими специалистами...</p>
-								<a href="#services__popup4" class="services__section-more open_modal">Подробнее</a>
+								<p class="services__section-more">Подробнее</p>
 						    </div>
-						</div>
+						</a>
 
-						<div class="sections">
+						<a class="sections open_modal" href="#services__popup5">
 							<div class="section__mobile">
 								<img src="images/noun-service.svg" alt="" class="services__section-img">
-								<h3 class="services__section-paragraph">Дополнительные услуги</h3>
+								<h3 class="services__section-paragraph">Доп. услуги</h3>
 								<p class="services__section-text">Постоянные обновления версий iiko,  аренда и подмены оборудования  постоянный мониторинг... 
 		                        </p>
-								<a href="#services__popup5" class="services__section-more open_modal">Подробнее</a>
+								<p class="services__section-more">Подробнее</p>
 						    </div>
-						</div>
+						</a>
 		
-						<div class="sections">
+						<a class="sections open_modal" href="#services__popup6">
 							<div class="section__mobile">
 								<img src="images/technical.svg" alt="" class="services__section-img">
-								<h3 class="services__section-paragraph">Техническая поддержка</h3>
+								<h3 class="services__section-paragraph">Тех. поддержка</h3>
 								<p class="services__section-text">Штат службы поддержки готов ответить на ваши вопросы 24/7, решить вопрос удаленно...</p>
-								<a href="#services__popup6" class="services__section-more open_modal">Подробнее</a>
+								<p class="services__section-more">Подробнее</p>
 						    </div>
-						</div>
+						</a>
 				    </div>
                 </div>
 			</div>
@@ -313,7 +316,7 @@
 	</div>
 	<div class="about__company" id="about__company">
 		<div class="container">
-			<div class="about__company__block">
+			<div class="about__company__block" data-aos="zoom-in-up">
 				<div class="about__company-text">
 					<h2 class="about__company-paragraph">О компании iiko</h2>
 					<p class="about__text-iiko iiko">iiko – единая система для управления продажами, складом, кухней, доставкой, персоналом, финансами, поставщиками, лояльностью гостей – всеми процессами в ресторане.</p>
@@ -346,10 +349,10 @@
 	<div class="advantage">
 		<div class="container">
 			<div class="advantage__block">
-				<h2 class="main__paragraph-white">Преимущества iiko</h2>
-				<p class="main__text-white">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении.</p>
-				<div class="advantage__text">
-					<div class="advantage__text-section">
+				<h2 class="main__paragraph-white" data-aos="fade-down">Преимущества iiko</h2>
+				<p class="main__text-white" data-aos="fade-down">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении.</p>
+				<div class="advantage__text" data-aos="zoom-in">
+					<a href="#advantage__popup" class="advantage__text-section open_modal">
 						<div class="block-numbers">
 							<p class="numbers-item">1</p>
 						</div>
@@ -357,8 +360,8 @@
 							<h3 class="advantage__paragraph">Технологии искусственного интеллекта</h3>
 							<p class="product__description">Для решения ваших ежедневных задач и планирования бизнеса в iiko используется искусственный интеллект...</p>
                         </div>
-					</div>
-					<div class="advantage__text-section">
+					</a>
+					<a href="#advantage__popup2" class="advantage__text-section open_modal">
 						<div class="block-numbers">
 							<p class="numbers-item">2</p>
 						</div>
@@ -366,8 +369,8 @@
 							<h3 class="advantage__paragraph">Все инструменты управления рестораном «из коробки»</h3>
 							<p class="product__description">iiko – единая система для управления продажами, складом, кухней, доставкой, персоналом, финансами, поставщиками...</p>
 						</div>	
-					</div>
-					<div class="advantage__text-section">
+					</a>
+					<a href="#advantage__popup3" class="advantage__text-section open_modal">
 						<div class="block-numbers">
 							<p class="numbers-item">3</p>
 						</div>
@@ -375,8 +378,8 @@
 							<h3 class="advantage__paragraph">Информация о бизнесе в режиме онлайн</h3>
 							<p class="product__description">Поскольку все данные обрабатываются в единой системе, информация о выручке, себестоимости...</p>
 						</div>	
-					</div>
-					<div class="advantage__text-section">
+					</a>
+					<a href="#advantage__popup4" class="advantage__text-section open_modal">
 						<div class="block-numbers">
 							<p class="numbers-item">4</p>
 						</div>
@@ -384,8 +387,8 @@
 							<h3 class="advantage__paragraph">Управление ресторанными сетями</h3>
 							<p class="product__description">С помощью iiko вы можете управлять политикой,персоналом, закупками, производством и маркетингом...</p>
 						</div>	
-					</div>
-					<div class="advantage__text-section">
+					</a>
+					<a href="#advantage__popup5" class="advantage__text-section open_modal">
 						<div class="block-numbers">
 							<p class="numbers-item">5</p>
 						</div>
@@ -393,8 +396,8 @@
 							<h3 class="advantage__paragraph">Возможность интеграции с сайтом и приложениями</h3>
 							<p class="product__description">Благодаря iikoAPI вы можете легко подключить к системе дополнительные модули, в том числе и те....</p>
 						</div>	
-					</div>
-					<div class="advantage__text-section">
+					</a>
+					<a href="#advantage__popup6" class="advantage__text-section open_modal">
 						<div class="block-numbers">
 							<p class="numbers-item">6</p>
 						</div>
@@ -402,14 +405,14 @@
 							<h3 class="advantage__paragraph">Установка в облако, так и локально</h3>
 							<p class="product__description">Вы можете выбрать для себя удобный формат использования системы и решить, будете ли вы инвестировать...</p>
 						</div>	
-					</div>
+					</a>
 				</div>
 				<!-- Advantage text Mobile -->
                 <div class="advantage__mobile">
-					<div class="block__advantage-mobile">
+					<div class="block__advantage-mobile" data-aos="zoom-in">
 						<div class="advantage__sections">
 	                        <div class="advantage__section-mobile">
-								<div class="section__mobile-top">
+								<a href="#advantage__popup" class="section__mobile-top open_modal">
 									<div class="block-numbers">
 										<p class="numbers-item">1</p>
 									</div>
@@ -417,8 +420,8 @@
 										<h3 class="advantage__paragraph">Технологии искусственного интеллекта</h3>
 										<p class="product__description">Для решения ваших ежедневных задач и планирования бизнеса в iiko используется искусственный интеллект...</p>
 			                        </div>
-								</div>
-								<div class="section__mobile-bottom">
+								</a>
+								<a href="#advantage__popup2" class="section__mobile-bottom open_modal">
 									<div class="block-numbers">
 										<p class="numbers-item">2</p>
 									</div>
@@ -426,12 +429,12 @@
 										<h3 class="advantage__paragraph">Все инструменты управления рестораном «из коробки»</h3>
 										<p class="product__description">iiko – единая система для управления продажами, складом, кухней, доставкой, персоналом, финансами, поставщиками...</p>
 									</div>	
-								</div>
+								</a>
 	                        </div>
 						</div>
 						<div class="advantage__sections">
 	                        <div class="advantage__section-mobile">
-								<div class="section__mobile-top">
+					            <a href="#advantage__popup3" class="section__mobile-top open_modal">
 									<div class="block-numbers">
 										<p class="numbers-item">3</p>
 									</div>
@@ -439,8 +442,8 @@
 										<h3 class="advantage__paragraph">Информация о бизнесе в режиме онлайн</h3>
 										<p class="product__description">Поскольку все данные обрабатываются в единой системе, информация о выручке, себестоимости...</p>
 									</div>
-								</div>
-								<div class="section__mobile-bottom">
+								</a>
+								<a href="#advantage__popup4" class="section__mobile-bottom open_modal">
 									<div class="block-numbers">
 										<p class="numbers-item">4</p>
 									</div>
@@ -448,12 +451,12 @@
 										<h3 class="advantage__paragraph">Управление ресторанными сетями</h3>
 										<p class="product__description">С помощью iiko вы можете управлять политикой,персоналом, закупками, производством и маркетингом...</p>
 									</div>	
-								</div>
+								</a>
 	                        </div>
 						</div>
 						<div class="advantage__sections">
 	                        <div class="advantage__section-mobile">
-								<div class="section__mobile-top">
+					            <a href="#advantage__popup5" class="section__mobile-top open_modal">
 									<div class="block-numbers">
 										<p class="numbers-item">5</p>
 									</div>
@@ -461,8 +464,8 @@
 										<h3 class="advantage__paragraph">Возможность интеграции с сайтом и приложениями</h3>
 										<p class="product__description">Благодаря iikoAPI вы можете легко подключить к системе дополнительные модули, в том числе и те....</p>
 									</div>
-								</div>
-								<div class="section__mobile-bottom">
+								</a>
+								<a href="#advantage__popup6" class="section__mobile-bottom open_modal">
 									<div class="block-numbers">
 										<p class="numbers-item">6</p>
 									</div>
@@ -470,7 +473,7 @@
 										<h3 class="advantage__paragraph">Установка в облако, так и локально</h3>
 										<p class="product__description">Вы можете выбрать для себя удобный формат использования системы и решить, будете ли вы инвестировать...</p>
 									</div>
-								</div>
+								</a>
 	                        </div>
 						</div>
 				    </div>
@@ -481,9 +484,9 @@
 	<div class="prices" id="prices">
 		<div class="container">
 			<div class="prices__block">
-				<h2 class="prices__block-paragraph">Цены на iiko</h2>
-				<p class="prices__block-iiko">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении. </p>
-			    <div class="prices__block-products">
+				<h2 class="prices__block-paragraph" data-aos="fade-down">Цены на iiko</h2>
+				<p class="prices__block-iiko" data-aos="fade-down">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении. </p>
+			    <div class="prices__block-products" data-aos="zoom-in">
 			    	<div class="tabs">
 				        <span class="tab tab-1">Аренда iiko</span>
 				        <span class="tab tab-2">Покупка iiko</span>     
@@ -499,7 +502,7 @@
 				            			<li class="prices__spisok-item">Облачное решение </li>
 				            			<li class="prices__spisok-item">Только 1 касса</li>
 				            		</ul>
-				            		<a href="#modal__prices" class="button__application open_modal">Оставить заявку</a>
+				            		<a href="#modal-form" class="button__application open_modal">Оставить заявку</a>
 				            	</div>
 				            	<div class="prices__carousel-slide">
 				            		<p class="name__prices">Голд</p>
@@ -510,7 +513,7 @@
 				            			<li class="prices__spisok-item">Только 1 касса</li>
 				            			<li class="prices__spisok-item">Базовая фукциональность</li>
 				            		</ul>
-				            		<a href="#modal__prices" class="button__application button-center open_modal">Оставить заявку</a>
+				            		<a href="#modal-form" class="button__application button-center open_modal">Оставить заявку</a>
 				            	</div>
 				            	<div class="prices__carousel-slide">
 				            		<p class="name__prices">Премиум</p>
@@ -521,12 +524,12 @@
 				            			<li class="prices__spisok-item">Только 1 касса</li>
 				            			<li class="prices__spisok-item">Базовая фукциональность</li>
 				            		</ul>
-				            		<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
+				            		<a href="#modal-form" class="button__application button-last open_modal">Оставить заявку</a>
 				            	</div>
 				            </div>
 
 				            <!-- Prices carousel mobile -->
-                            <div class="block__prices-mobile">
+                            <div class="block__prices-mobile" data-aos="zoom-in">
 
                             	<div class="owl-price owl-carousel">
                             		<div class="owl-price__item">
@@ -539,7 +542,7 @@
                             					<li class="prices__spisok-item">Только 1 касса</li>
                             					<li class="prices__spisok-item">Базовая фукциональность</li>
                             				</ul>
-                            				<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
+                            				<a href="#modal-form" class="button__application button-last open_modal">Оставить заявку</a>
                             			</div>
                             		</div>
                             		<!-- /.owl-price__item -->
@@ -554,7 +557,7 @@
                             					<li class="prices__spisok-item">Только 1 касса</li>
                             					<li class="prices__spisok-item">Базовая фукциональность</li>
                             				</ul>
-                            				<a href="#modal__prices" class="button__application button-center open_modal">Оставить заявку</a>
+                            				<a href="#modal-form" class="button__application button-center open_modal">Оставить заявку</a>
                             			</div>
                             		</div>
                             		<!-- /.owl-price__item -->
@@ -569,7 +572,7 @@
                             					<li class="prices__spisok-item">Только 1 касса</li>
                             					<li class="prices__spisok-item">Базовая фукциональность</li>
                             				</ul>
-                            				<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
+                            				<a href="#modal-form" class="button__application button-last open_modal">Оставить заявку</a>
                             			</div>
                             		</div>
                             		<!-- /.owl-price__item -->
@@ -588,7 +591,7 @@
 				            			<li class="prices__spisok-item">Облачное решение </li>
 				            			<li class="prices__spisok-item">Только 1 касса</li>
 				            		</ul>
-				            		<a href="#modal__prices" class="button__application open_modal">Оставить заявку</a>
+				            		<a href="#modal-form" class="button__application open_modal">Оставить заявку</a>
 				            	</div>
 				            	<div class="prices__carousel-slide">
 				            		<p class="name__prices">Голд</p>
@@ -599,7 +602,7 @@
 				            			<li class="prices__spisok-item">Только 1 касса</li>
 				            			<li class="prices__spisok-item">Базовая фукциональность</li>
 				            		</ul>
-				            		<a href="#modal__prices" class="button__application button-center open_modal">Оставить заявку</a>
+				            		<a href="#modal-form" class="button__application button-center open_modal">Оставить заявку</a>
 				            	</div>
 				            	<div class="prices__carousel-slide">
 				            		<p class="name__prices">Премиум</p>
@@ -610,7 +613,7 @@
 				            			<li class="prices__spisok-item">Только 1 касса</li>
 				            			<li class="prices__spisok-item">Базовая фукциональность</li>
 				            		</ul>
-				            		<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
+				            		<a href="#modal-form" class="button__application button-last open_modal">Оставить заявку</a>
 				            	</div>
 				            </div>
                               <!-- Prices carousel mobile -->
@@ -625,7 +628,7 @@
 	                            				<li class="prices__spisok-item">Облачное решение </li>
 	                            				<li class="prices__spisok-item">Только 1 касса</li>
 	                            			</ul>
-	                            			<a href="#modal__prices" class="button__application open_modal">Оставить заявку</a>
+	                            			<a href="#modal-form" class="button__application open_modal">Оставить заявку</a>
 	                            		</div>
 	                            	</div>
 	                            	<!-- /.owl-price__item -->
@@ -640,7 +643,7 @@
 	                            				<li class="prices__spisok-item">Только 1 касса</li>
 	                            				<li class="prices__spisok-item">Базовая фукциональность</li>
 	                            			</ul>
-	                            			<a href="#modal__prices" class="button__application button-center open_modal">Оставить заявку</a>
+	                            			<a href="#modal-form" class="button__application button-center open_modal">Оставить заявку</a>
 	                            		</div>
 	                            	</div>
 	                            	<!-- /.owl-price__item -->
@@ -655,7 +658,7 @@
 	                            				<li class="prices__spisok-item">Только 1 касса</li>
 	                            				<li class="prices__spisok-item">Базовая фукциональность</li>
 	                            			</ul>
-	                            			<a href="#modal__prices" class="button__application button-last open_modal">Оставить заявку</a>
+	                            			<a href="#modal-form" class="button__application button-last open_modal">Оставить заявку</a>
 	                            		</div>
 	                            	</div>
 	                            	<!-- /.owl-price__item -->
@@ -668,16 +671,13 @@
 			</div>
 		</div>
 	</div>
-
-
-
 	<div class="questions" id="questions">
 		<div class="container">
 			<div class="questions__block">
-				<h2 class="main__paragraph-white">Вопросы</h2>
-				<p class="main__text-white">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении.</p>
+				<h2 class="main__paragraph-white" data-aos="fade-down">Вопросы</h2>
+				<p class="main__text-white" data-aos="fade-down">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении.</p>
 				<div class="questions__accordion">
-					<div class="questions__accordion-left">
+					<div class="questions__accordion-left" data-aos="fade-right">
 						<article class="beefup">
 						    <h3 class="beefup__head">Сложно ли перейти с другой учетной системы на iiko?</h3>
 						    <div class="beefup__body">
@@ -709,7 +709,7 @@
 						    </div>
 						</article>
 					</div>
-					<div class="questions__accordion-right">
+					<div class="questions__accordion-right" data-aos="fade-left">
 						<article class="beefup">
 						    <h3 class="beefup__head">Есть ли CRM система и СМС-рассылка?</h3>
 						    <div class="beefup__body">
@@ -744,7 +744,7 @@
 				</div>
                  <!-- Accordion mobail -->
                 <div class="accordion__mobile"> 
-					<div class="questions__accordion-mobile">
+					<div class="questions__accordion-mobile" data-aos="zoom-in">
 						<div class="questions__accordion-left">
 							<article class="beefup">
 							    <h3 class="beefup__head">Сложно ли перейти с другой учетной системы на iiko?</h3>
@@ -817,16 +817,16 @@
 	<div class="articles" id="articles">
 		<div class="container">
 			<div class="articles__block">
-				<h2 class="articles__block-paragraph">Наши статьи</h2>
-				<p class="articles__block-iiko">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении. </p>
-			    <div class="articles__block-products">
+				<h2 class="articles__block-paragraph" data-aos="fade-down">Наши статьи</h2>
+				<p class="articles__block-iiko" data-aos="fade-down">Карта CoinKeeper — это бесплатная виртуальная банковская карта,<br> которую вы можете выпустить в приложении. </p>
+			    <div class="articles__block-products" data-aos="zoom-in">
 				   <section class="articles__section">
                         <div class="picture">
 				   	        <img src="images/article-1.jpg" alt="" class="section__foto">
                         </div>
 				   	    <h3 class="section__paragraph">Тотальная автоматизация</h3>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				   </section>
 				    <section class="articles__section">
 				   	    <div class="picture">
@@ -834,7 +834,7 @@
                         </div>
 				   	    <h3 class="section__paragraph">Удобство интерфейса</h3>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup2" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				   </section>
 				    <section class="articles__section">
 				   	    <div class="picture">
@@ -842,10 +842,10 @@
                         </div>
 				   	    <h3 class="section__paragraph">Управление персоналом</h3>
 				   	    <p class="section__text">С помощью iiko можно централизованно принимать заказы как по телефону, так и через сайт ресторана</p>
-				   	    <a href="#article__popup3" class="section__more open_modal">Подробнее</a>
+				   	    <a href="name-article.html" class="section__more">Подробнее</a>
 				   </section>
 			    </div>
-			    <a href="articles.html" class="article__button">Все статьи</a>
+			    <a href="articles.html" class="article__button" data-aos="flip-down">Все статьи</a>
 			</div>
 		</div>
 	</div>
@@ -865,8 +865,8 @@
 					</ul>
                 </div>
 				<div class="block__confidentiality">
-					<a href="#" class="confidentiality__link">Конфиденциальность</a>
-					<a href="#" class="confidentiality__link">Наши статьи</a>
+					<a href="#confident-popup" class="confidentiality__link open_modal">Конфиденциальность</a>
+					<a href="articles.html" class="confidentiality__link">Наши статьи</a>
 				</div>
 			</div>
 			<div class="footer__block-right">
@@ -941,33 +941,19 @@
 </footer>
 
 <!--Modal Window -->
-
-<div id="callback" class="modal">
-    <div class="modal__block">
-        <div class="modal__content">
-            <div class="modal__in modal__in--width">
-                <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
-                    <span class="modal__close"></span>
-                </div>
-                <div class="modal__body modal__body--border">
-                    <p>Заказать звонок</p>
-                </div>
-            </div>
-            <div class="modal__overlay"></div>
-        </div>
-    </div>
-</div>
 <div id="about__popup" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>О компании Retail Soft Consulting</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
@@ -977,13 +963,16 @@
 <div id="services__popup" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Установка iiko</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
@@ -993,13 +982,16 @@
 <div id="services__popup2" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Оборудование и задачи</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
@@ -1009,13 +1001,16 @@
 <div id="services__popup3" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Хостинг сервера</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
@@ -1025,13 +1020,16 @@
 <div id="services__popup4" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Обучение и аудит</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
@@ -1041,13 +1039,16 @@
 <div id="services__popup5" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Дополнительные услуги</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
@@ -1057,13 +1058,16 @@
 <div id="services__popup6" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Техническая поддержка</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
@@ -1073,92 +1077,149 @@
 <div id="about__company-popup" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>О компании iiko</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
         </div>
     </div>
 </div>
-<div id="modal__prices" class="modal">
-    <div class="modal__block">
-                <div class="modal__content">
-                    <div class="modal__in">
-                        <div class="modal__header modal__header--indent">
-                            <h5 class="modal__title">Онлайн запись</h5>
-                            <span class="modal__close"></span>
-                        </div>
-                        <div class="modal__body">
-                            <form method="post" class="modal__form form" id="form3" novalidate="novalidate">
-                                <div class="form__group">
-                                    <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="text" name="userName" placeholder="Имя" class="form__input form__input--border">
-                                    </div>
-                                </div>
-                                <div class="form__group">
-                                    <div class="form__input-wrapper form__input-wrapper--border">
-                                        <input type="tel" value="+38" name="userTel" placeholder="Телефон" class="form__input form__input--border">
-                                    </div>
-                                </div>
-                                <div class="form__group text-center">
-                                    <input type="hidden" name="submit">
-                                    <button type="submit" class="btn btn--default btn--md">Записаться</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="modal__overlay"></div>
-                </div>
-    </div>
-</div>
-<div id="article__popup" class="modal">
+<div id="advantage__popup" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Наши статьи</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
         </div>
     </div>
 </div>
-<div id="article__popup2" class="modal">
+<div id="advantage__popup2" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Наши статьи</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
         </div>
     </div>
 </div>
-<div id="article__popup3" class="modal">
+<div id="advantage__popup3" class="modal">
     <div class="modal__block">
         <div class="modal__content">
-            <div class="modal__in modal__in--width">
+            <div class="modal__in--width">
                 <div class="modal__header">
-                    <h5 class="modal__title modal__title--target">&nbsp;dfdfdf</h5>
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
                     <span class="modal__close"></span>
                 </div>
                 <div class="modal__body modal__body--border">
-                    <p>Наши статьи</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                </div>
+            </div>
+            <div class="modal__overlay"></div>
+        </div>
+    </div>
+</div>
+<div id="advantage__popup4" class="modal">
+    <div class="modal__block">
+        <div class="modal__content">
+            <div class="modal__in--width">
+                <div class="modal__header">
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
+                    <span class="modal__close"></span>
+                </div>
+                <div class="modal__body modal__body--border">
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                </div>
+            </div>
+            <div class="modal__overlay"></div>
+        </div>
+    </div>
+</div>
+<div id="advantage__popup5" class="modal">
+    <div class="modal__block">
+        <div class="modal__content">
+            <div class="modal__in--width">
+                <div class="modal__header">
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
+                    <span class="modal__close"></span>
+                </div>
+                <div class="modal__body modal__body--border">
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                </div>
+            </div>
+            <div class="modal__overlay"></div>
+        </div>
+    </div>
+</div>
+<div id="advantage__popup6" class="modal">
+    <div class="modal__block">
+        <div class="modal__content">
+            <div class="modal__in--width">
+                <div class="modal__header">
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
+                    <span class="modal__close"></span>
+                </div>
+                <div class="modal__body modal__body--border">
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                </div>
+            </div>
+            <div class="modal__overlay"></div>
+        </div>
+    </div>
+</div>
+<div id="confident-popup" class="modal">
+    <div class="modal__block">
+        <div class="modal__content">
+            <div class="modal__in--width">
+                <div class="modal__header">
+                    <h5 class="modal__title">О компании Retail Soft Consulting</h5>
+                    <span class="modal__close"></span>
+                </div>
+                <div class="modal__body modal__body--border">
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
+                    <p class="popup__text-inset">Наша цель - сделать ваш учет точным, своевременным и понятным. Мы видим, как быстро растет новая культура общепита, и всячески упрощаем процессы на предприятиях.</p>
+                    <p class="popup__text-inset">Стоит ли медлить, ждать, "собирать" P&L по крупицам, ведь время и люди - самый ценный ресурс. Упростите работу себе и каждому члену вашей команды, обратившись к нам.</p>
                 </div>
             </div>
             <div class="modal__overlay"></div>
@@ -1170,7 +1231,7 @@
                 <div class="modal__content">
                     <div class="modal__in">
                         <div class="modal__header modal__header--indent">
-                            <h5 class="modal__title">Онлайн запись</h5>
+                            <h5 class="modal__title-form">Заказать звонок</h5>
                             <span class="modal__close"></span>
                         </div>
                         <div class="modal__body">
@@ -1206,6 +1267,7 @@
 <script src="js/jquery.beefup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/main.js"></script>
 
 </body>

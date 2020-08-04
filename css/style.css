@@ -95,7 +95,7 @@ body {
 }
 a, a:visited { /* порядок правил для ссылок имеет значение */
 	color: #FFF;
-	text-decoration: underline;
+	text-decoration: none;
 }
 a:hover {
 	color: #FFF;
@@ -321,7 +321,7 @@ img{
     position: absolute;
     position: fixed;
     width: 100%;
-    padding: 35px 0 42px 0;
+    padding: 15px 0 20px 0;
     background-color:  #0C2758;
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
@@ -351,7 +351,7 @@ img{
 }
 
 .slider__top-paragraph {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 3.125em;
 	color: #fff;
 	line-height: 1.3;
@@ -524,6 +524,7 @@ a.main__more::before {
 	margin-bottom: 30px;
 	padding: 40px 0 30px 0;
 	text-align: center;
+	position: relative;
 
 }
 
@@ -535,6 +536,7 @@ a.main__more::before {
 .services__section-paragraph {
 	font-size: 1.25em;
 	margin-bottom: 11px;
+	color: #1f1f1f;
 }
 
 .services__section-text {
@@ -543,17 +545,23 @@ a.main__more::before {
 	width: 57%;
 	margin: 0 auto 35px auto;
 	line-height: 1.5;
+	padding-bottom: 20px;
+	color: #1f1f1f;
 }
 
-a.services__section-more {
+.services__section-more {
 	position: relative;
     color: #364274;
     font-size: 1em;
     font-weight: 300;
     text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-38px);
 }
 
-a.services__section-more::before {
+.services__section-more::before {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -1207,6 +1215,15 @@ a.diex__link:hover {
 	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
 	-webkit-tap-highlight-color: rgba(0,0,0,0);}
 
+.modal__title {
+	text-transform: uppercase;
+}
+	.popup__text-inset {
+		margin-bottom: 15px;
+		line-height: 1.5;
+		font-weight: 300;
+	}
+
 /*Page Our Articles*/
 
 .header__articles {
@@ -1533,8 +1550,9 @@ a.pagination__item-link:hover {
 	top: 38px;
 	left: 0;
 	height: 1px;
-	width: 87%;
-    left:6.5%;
+	width: 245px;
+    left: 50%;
+    transform: translateX(-114px);
 	opacity: 0.5;
 	background-color: #fff;
 }
@@ -1605,6 +1623,7 @@ a.pagination__item-link:hover {
 	    text-align: center;
     padding-top: 35px;
     height: 320px;
+    position: relative;
 }
 
 .services__section-img {
@@ -1791,7 +1810,6 @@ a.pagination__item-link:hover {
 .block__confidentiality {
 	margin-top: 0;
 	margin-bottom: 80px;
-	justify-content: center;
 	position: relative;
 }
 
@@ -2088,7 +2106,7 @@ a.article__bottom-link {
 	top: 1px;
 }
 .owl-price .prices__carousel-slide {
-    width: 320px;
+    width: 300px;
     margin: 0 auto;
 }
 }
