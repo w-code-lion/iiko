@@ -52,9 +52,7 @@ $(document).ready(function(){
   menuToggle.onclick = function(){
     menuToggle.classList.toggle('menu-icon-active');
     mobileNavContainer.classList.toggle('mobile-nav--active');
-  }
-  
-      
+  }     
 
 });
 
@@ -307,21 +305,21 @@ $(document).ready(function(){
              $('.modal__desc--target').empty();
              $('.modal__title--target').append(title);
              $('.modal__desc--target').append(desc);
-             overlay.fadeIn(400,
+             overlay.fadeIn(100,
                  function(){
                      $(div)
                          .css('display', 'block')
-                         .animate({opacity: 1}, 200);
+                         .animate({opacity: 1}, 100);
              });
          });
 
          close.click( function(){
                 var modal = $(this).parents('.modal');
                 modal
-                 .animate({opacity: 0}, 200,
+                 .animate({opacity: 0}, 100,
                      function(){
                          $(this).css('display', 'none',);
-                         overlay.fadeOut(400);
+                         overlay.fadeOut(100);
                      }
                  );
          });
