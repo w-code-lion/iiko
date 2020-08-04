@@ -1001,7 +1001,7 @@ a.article__button {
 
 .footer {
 	background: #0C2758;
-	padding: 50px 0 40px 0;
+	padding: 50px 0 20px 0;
 }
 
 .footer__block {
@@ -1157,7 +1157,7 @@ a.confidentiality__link:first-child::before {
 	justify-content: space-between;
 	margin-top: 30px;
 	position: relative;
-	padding-top: 35px;
+	padding-top: 20px;
 }
 
 .copyright__block::before {
@@ -1329,6 +1329,11 @@ a.pagination__item-link {
 
 a.pagination__item-link:hover {
 	text-decoration: none;
+	color: #fff;
+	background-color:#0C2758; 
+}
+
+a.one-pagin {
 	color: #fff;
 	background-color:#0C2758; 
 }
