@@ -52,7 +52,9 @@ $(document).ready(function(){
   menuToggle.onclick = function(){
     menuToggle.classList.toggle('menu-icon-active');
     mobileNavContainer.classList.toggle('mobile-nav--active');
-  }     
+  }   
+
+    
 
 });
 
