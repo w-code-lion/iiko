@@ -217,6 +217,26 @@ img{
 	text-decoration: none;
 }
 
+a.mPS2id-highlight-first {
+	position: relative;
+	z-index: 1;
+    padding-bottom: 10px;
+    transition: .2s;
+}
+
+a.mPS2id-highlight-first::after {
+    content: '';
+    text-decoration: none;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    z-index: -1;
+}
+
 .block__language-call {
 	display: flex;
 	align-items: center;
@@ -335,7 +355,6 @@ img{
   transform: translateY(604px);
 }
 
-
 .header__center {
    margin-top: 50px;
 }
@@ -447,6 +466,7 @@ a.main__more {
 	background-repeat: no-repeat;
 	background-position: right 9px;
 	text-decoration: none;
+	transition: .5s;
 }
 a.main__more::before {
 	content: '';
@@ -456,6 +476,10 @@ a.main__more::before {
 	height: 1px;
 	width: 80px;
 	background-color: #364274;
+}
+
+a.main__more:hover {
+	padding-right: 42px;
 }
 
 .about__bottom {
@@ -943,7 +967,14 @@ a.button-last {
 .picture {
 	height: 360px;
 	overflow: hidden;
+	display: block;
+	position: relative;
 }
+
+.picture:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(12, 39, 88, 0.6);  opacity: 0; }
+
+.picture:hover:before,
+.picture:hover:after { opacity: 1; transition: .5s;}
 
 .section__foto {
 	width: 100%;
@@ -954,6 +985,7 @@ a.button-last {
 .section__paragraph {
 	font-size: 1.375em;
 	margin: 25px 0 8px 0;
+	color: #1f1f1f;
 }
 
 .section__text {
@@ -961,21 +993,24 @@ a.button-last {
 	line-height: 1.5;
 	margin-bottom: 10px;
 	width: 90%;
+	color: #1f1f1f;
 }
 
-a.section__more {
+.section__more {
 	position: relative;
 	font-weight: 300;
     color: #364274;
     padding: 0 31px 0 0;
     font-size: 1em;
     text-decoration: none;
+    display: inline-block;
     background-image: url(../images/more-arrow.svg);
     background-repeat: no-repeat;
     background-position: right 8px;
+    transition: .5s;
 }
 
-a.section__more::before {
+.section__more::before {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -983,6 +1018,10 @@ a.section__more::before {
     height: 1px;
     width: 80px;
     background-color: #364274;
+}
+
+.section__more:hover {
+	padding-right: 39px;
 }
 
 a.article__button {
@@ -1073,7 +1112,7 @@ a.confidentiality__link {
 }
 
 a.confidentiality__link:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a.confidentiality__link:last-child {
