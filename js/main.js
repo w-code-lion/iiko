@@ -54,7 +54,10 @@ $(document).ready(function(){
     mobileNavContainer.classList.toggle('mobile-nav--active');
   }   
 
-    
+    $('.mobile__link-close').click(function() {
+    menuToggle.classList.toggle('menu-icon-active');
+    mobileNavContainer.classList.toggle('mobile-nav--active');
+  });  
 
 });
 

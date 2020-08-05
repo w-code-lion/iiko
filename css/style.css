@@ -1100,35 +1100,6 @@ a.article__button::after {
     transition: width .3s cubic-bezier(.47,0,.745,.715);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
 	background: #0C2758;
 	padding: 50px 0 20px 0;
@@ -1906,11 +1877,11 @@ a.one-pagin {
     padding-bottom: 2px;
 }
 
-.page-aricle {
+a.page-aricle {
     margin-top: 40px;
 }
 
-.articles__section-two:nth-child(1n) {
+a.articles__section-two:nth-child(1n) {
     margin-right: 0;
 }
 
@@ -2144,7 +2115,7 @@ a.services__section-more {
     margin-bottom: 30px;
 }
 
-.articles__section-two {
+a.articles__section-two {
     width: 48%;
 }
 
@@ -2177,7 +2148,7 @@ a.services__section-more {
 	margin-right: 0;
 }
 
-.articles__section-two {
+a.articles__section-two {
     width: 100%;
 }
 
