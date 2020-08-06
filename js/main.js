@@ -68,7 +68,7 @@ $(document).ready(function(){
   // Header slickSlider
 
   $('.header__carousel').slick({
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 4000,
     speed: 400,
     arrows: false,
@@ -283,7 +283,7 @@ $(document).ready(function(){
   $(".owl-price").owlCarousel({
     items: 1,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 5000
 
   });

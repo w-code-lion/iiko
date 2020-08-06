@@ -398,7 +398,7 @@ img{
 .hgroup {
 	padding-top: 68px;
 	padding-bottom: 75px;
-	max-width: 575px;
+	max-width: 685px;
 }
 
 .slider__top-paragraph {
@@ -633,10 +633,6 @@ a.main__more:hover {
     height: 1px;
     width: 80px;
     background-color: #364274;
-}
-
-.services__section-more:hover {
-	transform: scale(1.1) translateX(-33px);
 }
 
 .services__mobile {
@@ -903,23 +899,40 @@ a.button__application {
     box-sizing: border-box;
     position: relative;
     transition: .3s;
+    z-index: 1;
+}
+
+.btn--price:hover {
+    color: #fff;
+    border:1px solid #364274;
+}
+
+a.btn--price--two:hover::after {
+    width: 100%;
+    left: 0;
+    -webkit-transition: width .3s cubic-bezier(.29,.18,.26,.83);
+    transition: width .3s cubic-bezier(.29,.18,.26,.83);
+}
+
+.btn--price::after {
+    background-color: #364274;
+}
+
+a.btn--price--two::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    -webkit-transition: width .3s cubic-bezier(.47,0,.745,.715);
+    transition: width .3s cubic-bezier(.47,0,.745,.715);
 }
 
 a.button__application:hover {
 	color: #fff;
 	text-decoration: none;
-	background-color:  #364274;
-}
-
-a.button__application:hover::after {
-    content: '';
-    width: 60%;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-56px);
 }
 
 a.button-center {
@@ -928,8 +941,16 @@ a.button-center {
 	color: #fff;
 }
 
-a.button-center:hover {
-	color: #fff;
+a.button-center:hover::after {
+    content: '';
+    width: 60%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-56px);
 }
 
 a.button-last {
@@ -975,7 +996,7 @@ a.button-last {
 }
 
 .open__text {
-	padding-left: 25px;
+	padding-left: 13px;
 }
 
 .accordion__mobile {
@@ -1916,6 +1937,14 @@ a.one-pagin {
 .prices {
 	padding-bottom: 40px;
 }
+
+a.button__application:hover {
+    color: #364274;
+    }
+
+a.button-center:hover {
+    color: #fff;
+    }
 
 .articles__section {
     width: 45%;
