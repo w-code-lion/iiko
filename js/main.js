@@ -113,7 +113,6 @@ $(document).ready(function(){
  ////////////////////////////////////
 
  $('.block__services-mobile').slick({
-    autoplay: true,
     autoplaySpeed: 3000,
     speed: 600,
     arrows: false,

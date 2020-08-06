@@ -270,7 +270,7 @@ img{
 
 .btn--two:hover {
     color: #fff;
-    border:1px solid #364274;
+    border:1px solid #E85650;
 }
 
 .button__call-link:hover::after {
@@ -281,7 +281,7 @@ img{
 }
 
 .btn--two::after {
-    background-color: #364274;
+    background-color: #E85650;
 }
 
 .button__call-link::after {
@@ -901,11 +901,25 @@ a.button__application {
     display: block;
     margin: 102px auto 0 auto;
     box-sizing: border-box;
+    position: relative;
+    transition: .3s;
 }
 
 a.button__application:hover {
-	color: #0C2758;
+	color: #fff;
 	text-decoration: none;
+	background-color:  #364274;
+}
+
+a.button__application:hover::after {
+    content: '';
+    width: 60%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-56px);
 }
 
 a.button-center {
@@ -1139,7 +1153,7 @@ a.article__button::after {
 	right: 0;
 	opacity: 0.5;
 	background-color: #fff;
-	height: 235px;
+	height: 195px;
 	width: 1px;
 }
 
@@ -1187,10 +1201,17 @@ a.confidentiality__link {
 	text-decoration: none;
 	position: relative;
 	font-size: 1.125em;
+	padding-bottom: 4px;
 }
 
-a.confidentiality__link:hover {
-	text-decoration: underline;
+a.confidentiality__link:hover::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 1px;
 }
 
 a.confidentiality__link:last-child {
@@ -1237,7 +1258,7 @@ a.confidentiality__link:first-child::before {
 }
 
 .code {
-	margin-bottom: 37px;
+	margin-bottom: 22px;
 }
 
 .code:last-child {
@@ -1245,7 +1266,7 @@ a.confidentiality__link:first-child::before {
 }
 
 .drib {
-	margin-bottom: 40px;
+	margin-bottom: 22px;
 }
 
 .block__partners-right {
@@ -1302,6 +1323,10 @@ a.diex__link {
 
 a.diex__link:hover {
     text-decoration: none;
+}
+
+a.diex__link:hover .diex__two {
+	color: #E85650;
 }
 
 .write {
@@ -1597,28 +1622,19 @@ a.one-pagin {
 	}
 
 	.main__text {
-	font-size: 0.875em;
+	font-size: 0.9375em;
 }
 
 	.about__text-iiko {
-		font-size: 0.875em;
+		font-size: 0.9375em;
 	}
 }
 
 @media (max-width: 1024px) {
-	.button__call-link:hover::after {
-     width: 0; 
-     left: 0; 
-}
+*:hover{
+}	
 
-.btn--two:hover {
-    border: 1px solid rgba(255,255,255,.5);
-}
 
-a.main__more:hover {
-     padding-right: 34px; 
-}
-	
 }
 
 @media (max-width: 990px) {
@@ -1805,6 +1821,14 @@ a.main__more:hover {
 
 .section__paragraph {
 	font-size: 1.19em;
+}
+
+.main__text {
+	line-height: 1.2;
+}
+
+.about__top-text {
+    margin-top: 0;
 }
 
 }
