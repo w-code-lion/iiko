@@ -1022,8 +1022,9 @@ a.button-last {
 
 .open__text {
 	padding-left: 13px;
-	padding-right: 35px;
+	padding-right: 50px;
 	font-size: 0.9375em;
+	margin-top: -18px;
 	color: #808080;
 	font-family: 'PT Sans', sans-serif;
 }
