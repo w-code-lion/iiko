@@ -24,7 +24,7 @@
     src: url('fonts/ProDisplay-semibold/SFProDisplay-Semibold.woff2') format('woff2'),
          url('fonts/ProDisplay-semibold/SFProDisplay-Semibold.woff') format('woff');
     font-weight: 600;
-    font-style: normal;
+    font-style: normal; 
 }
 /* --------------- reset.css --------------- */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
@@ -396,9 +396,27 @@ img{
 }
 
 .hgroup {
-	padding-top: 68px;
-	padding-bottom: 75px;
-	max-width: 685px;
+    padding-top: 68px;
+    padding-bottom: 75px;
+    max-width: 575px;
+}
+
+.hgroup-two {
+    padding-top: 68px;
+    padding-bottom: 75px;
+    max-width: 695px;
+}
+
+.hgroup-three {
+    padding-top: 68px;
+    padding-bottom: 75px;
+    max-width: 552px;
+}
+
+.hgroup-four {
+    padding-top: 68px;
+    padding-bottom: 75px;
+    max-width: 550px;
 }
 
 .slider__top-paragraph {
@@ -413,6 +431,13 @@ img{
 	font-size: 1.375em;
 	line-height: 1.5;
 	color: #fff;
+}
+
+.slider__top-text-two {
+	font-size: 1.375em;
+	line-height: 1.5;
+	color: #fff;
+	width: 76%;
 }
 
 .header__bottom {
