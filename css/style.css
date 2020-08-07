@@ -1682,7 +1682,7 @@ a.one-pagin {
 @media (max-width: 1024px) {
 
 a.main__more:hover {
-	padding-right: 34px;
+	/*padding-right: 34px;*/
 }
 
 }
