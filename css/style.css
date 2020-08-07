@@ -1677,15 +1677,13 @@ a.one-pagin {
 	.about__text-iiko {
 		font-size: 0.9375em;
 	}
-}
 
-@media (max-width: 1024px) {
 
 a.main__more:hover {
-	/*padding-right: 34px;*/
+	padding-right: 34px;
+}
 }
 
-}
 
 @media (max-width: 990px) {
 
