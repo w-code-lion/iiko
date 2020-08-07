@@ -1682,6 +1682,9 @@ a.one-pagin {
 a.main__more:hover {
 	padding-right: 34px;
 }
+
+.picture:hover:before,
+.picture:hover:after { opacity: 0; transition: 0;}
 }
 
 
