@@ -5,7 +5,7 @@ $(document).ready(function(){
       $(window).on("load",function(){
         
         /* Page Scroll to id fn call */
-        $("#menu a,a[href='#top'],a[rel='m_PageScroll2id'], .top").mPageScroll2id({
+        $("#menu a, #menu__mobile a, a[href='#top'],a[rel='m_PageScroll2id'], .top").mPageScroll2id({
           layout:"auto",
           offset:10,
           highlightSelector:"#menu a"
