@@ -502,7 +502,6 @@ img{
 
 .main__paragraph {
 	font-size: 3em;
-	margin-left: -2px;
 	margin-bottom: 20px;
 }
 .br{
@@ -689,7 +688,6 @@ a.main__more:hover {
 
 .about__company-paragraph {
 	font-size: 3em;
-	margin-left: -2px;
 	margin-bottom: 20px;
 }
 
