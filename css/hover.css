@@ -94,7 +94,7 @@ a.pagination__item-link:hover {
 
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1440px) {
 	.mobile__nav {
 		    transform: translateY(0);
 	}
