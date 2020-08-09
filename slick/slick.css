@@ -145,6 +145,14 @@
 }
 
 
+@media (max-height: 990px) {
+    .open__text {
+        padding-left: 0;
+        margin-left: -16px;
+    }
+}
+
+
 @media (max-width: 768px) {
    .code {
     height: 100%;
