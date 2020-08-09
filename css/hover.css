@@ -1,4 +1,4 @@
-@media (max-width: 1350px) {
+@media (max-width: 1370px) {
 
 	.btn--two:hover {
     color: #fff;
@@ -94,7 +94,7 @@ a.pagination__item-link:hover {
 
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1370px) {
 	.mobile__nav {
 		    transform: translateY(0);
 	}
